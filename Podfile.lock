@@ -1,0 +1,10 @@
+PODS:
+  - SwiftColor (0.3.4)
+
+DEPENDENCIES:
+  - SwiftColor
+
+SPEC CHECKSUMS:
+  SwiftColor: c2c3afeead2afdc7e2d3c0caf93b57a6ce49623c
+
+COCOAPODS: 0.38.2

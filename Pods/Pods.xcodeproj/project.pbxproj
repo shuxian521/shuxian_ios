@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1728C529FD971FA397B1F5A209AE926C /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6235173D9C02D07CF20252F9F39056 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2378596A74D46A0E3EE9F6DF0BC815DD /* SwiftColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2FEC4E56E9EBC5C4134B7E2D24AC2A /* SwiftColor.swift */; };
+		57D0C188773403AB371DD5257D33A1A2 /* SwiftColor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 090D7C9418E78801F831A50709F1F1FA /* SwiftColor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7CCBB3DD7AC8EB8FBAC2BBC226FFDD1 /* SwiftColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB73FB599D29174EE549D90333FB824 /* SwiftColor-dummy.m */; };
+		ABF1B623234239EEB35920BD38EAB8B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313A496DEE8408E099678652D4A26CF4 /* Foundation.framework */; };
+		D49056A4C76DDC30ABC7861548A78A60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 313A496DEE8408E099678652D4A26CF4 /* Foundation.framework */; };
+		DA1BDBB168821FB17A3DBECD21326BE3 /* SwiftColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BD30AC98FC674028D69F3801591DAA3 /* SwiftColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4E64BA226C1E5B131AE63F14944982F /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0884EA4BF16FBB71013B840C3C8408A7 /* Pods-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E92E544AD7E53501E37A1E704F4AB78B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D42E533A3E5913DE31461F43E614B67;
+			remoteInfo = SwiftColor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0884EA4BF16FBB71013B840C3C8408A7 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		090D7C9418E78801F831A50709F1F1FA /* SwiftColor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftColor-umbrella.h"; sourceTree = "<group>"; };
+		0BD30AC98FC674028D69F3801591DAA3 /* SwiftColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftColor.h; path = SwiftColor/SwiftColor.h; sourceTree = "<group>"; };
+		0DBE32A1B159213A1D6598165B947873 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		1D6E04D932CDDFD5B90C3BB692F1133F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		313A496DEE8408E099678652D4A26CF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		9B2FEC4E56E9EBC5C4134B7E2D24AC2A /* SwiftColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftColor.swift; path = SwiftColor/SwiftColor.swift; sourceTree = "<group>"; };
+		B34180D4356859F5A67C977EC0AC52A1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC559DDAC25627B095D84E2924E9A20A /* SwiftColor-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SwiftColor-Private.xcconfig"; sourceTree = "<group>"; };
+		C6570AF85BB4299A2BBE66E47E0E320D /* SwiftColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftColor-prefix.pch"; sourceTree = "<group>"; };
+		CBAF9649CB2BC9429EAB6C53C3E934C7 /* SwiftColor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftColor.modulemap; sourceTree = "<group>"; };
+		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E64517A789AA3CFEE80A62DD2C25EE3A /* SwiftColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB73FB599D29174EE549D90333FB824 /* SwiftColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftColor-dummy.m"; sourceTree = "<group>"; };
+		F714A46E7E4877E8D8907B612C15EF7F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		FB9361C1A448084E4A73388830B33335 /* SwiftColor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftColor.xcconfig; sourceTree = "<group>"; };
+		FE6235173D9C02D07CF20252F9F39056 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2ED55FDBDE1E967FF84ACC87D3EDBC0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF1B623234239EEB35920BD38EAB8B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BC965E3B7214A67B85A797F089C6510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D49056A4C76DDC30ABC7861548A78A60 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				313A496DEE8408E099678652D4A26CF4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		75B01DC882AAF3BBB87564DA5B074B55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D19BE1B74BA49EA0FA74445120E93129 /* SwiftColor */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
+				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
+				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
+				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
+				0884EA4BF16FBB71013B840C3C8408A7 /* Pods-dummy.m */,
+				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
+				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
+				FE6235173D9C02D07CF20252F9F39056 /* Pods-umbrella.h */,
+				F714A46E7E4877E8D8907B612C15EF7F /* Pods.debug.xcconfig */,
+				0DBE32A1B159213A1D6598165B947873 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				75B01DC882AAF3BBB87564DA5B074B55 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E6449386EFBF45A4F39F413265654DA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B34180D4356859F5A67C977EC0AC52A1 /* Info.plist */,
+				CBAF9649CB2BC9429EAB6C53C3E934C7 /* SwiftColor.modulemap */,
+				FB9361C1A448084E4A73388830B33335 /* SwiftColor.xcconfig */,
+				BC559DDAC25627B095D84E2924E9A20A /* SwiftColor-Private.xcconfig */,
+				EFB73FB599D29174EE549D90333FB824 /* SwiftColor-dummy.m */,
+				C6570AF85BB4299A2BBE66E47E0E320D /* SwiftColor-prefix.pch */,
+				090D7C9418E78801F831A50709F1F1FA /* SwiftColor-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftColor";
+			sourceTree = "<group>";
+		};
+		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6E04D932CDDFD5B90C3BB692F1133F /* Pods.framework */,
+				E64517A789AA3CFEE80A62DD2C25EE3A /* SwiftColor.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D19BE1B74BA49EA0FA74445120E93129 /* SwiftColor */ = {
+			isa = PBXGroup;
+			children = (
+				0BD30AC98FC674028D69F3801591DAA3 /* SwiftColor.h */,
+				9B2FEC4E56E9EBC5C4134B7E2D24AC2A /* SwiftColor.swift */,
+				7E6449386EFBF45A4F39F413265654DA /* Support Files */,
+			);
+			path = SwiftColor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		24C06571187BE9EE6877330F9059E787 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1728C529FD971FA397B1F5A209AE926C /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EC46DCE7EF4674525A7DDD8BAF0E494 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D0C188773403AB371DD5257D33A1A2 /* SwiftColor-umbrella.h in Headers */,
+				DA1BDBB168821FB17A3DBECD21326BE3 /* SwiftColor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D42E533A3E5913DE31461F43E614B67 /* SwiftColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F43CE21901E661F7F4D755F713CA733 /* Build configuration list for PBXNativeTarget "SwiftColor" */;
+			buildPhases = (
+				A070B2D1A7F1F093A5ABF52A89A0E045 /* Sources */,
+				2ED55FDBDE1E967FF84ACC87D3EDBC0B /* Frameworks */,
+				6EC46DCE7EF4674525A7DDD8BAF0E494 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftColor;
+			productName = SwiftColor;
+			productReference = E64517A789AA3CFEE80A62DD2C25EE3A /* SwiftColor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA0B8FB873C222792D883335A54E9E45 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55C19390D6FAE99A22093055A7660D4E /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				B8DBE6B083A11AFE56AB1555D8D4463E /* Sources */,
+				4BC965E3B7214A67B85A797F089C6510 /* Frameworks */,
+				24C06571187BE9EE6877330F9059E787 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7829DF05729A3FF7A4A9436A808247E /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 1D6E04D932CDDFD5B90C3BB692F1133F /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA0B8FB873C222792D883335A54E9E45 /* Pods */,
+				8D42E533A3E5913DE31461F43E614B67 /* SwiftColor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A070B2D1A7F1F093A5ABF52A89A0E045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7CCBB3DD7AC8EB8FBAC2BBC226FFDD1 /* SwiftColor-dummy.m in Sources */,
+				2378596A74D46A0E3EE9F6DF0BC815DD /* SwiftColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8DBE6B083A11AFE56AB1555D8D4463E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E64BA226C1E5B131AE63F14944982F /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7829DF05729A3FF7A4A9436A808247E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftColor;
+			target = 8D42E533A3E5913DE31461F43E614B67 /* SwiftColor */;
+			targetProxy = E92E544AD7E53501E37A1E704F4AB78B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		41A6C5B621EC09D46B94A0688B754667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC559DDAC25627B095D84E2924E9A20A /* SwiftColor-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.3.4;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.3.4;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftColor/SwiftColor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftColor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftColor/SwiftColor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftColor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4D90E3F15075A030645BE7EE0F61018C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DBE32A1B159213A1D6598165B947873 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7B528C12FBD127C9635CA827FCEDB4AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F714A46E7E4877E8D8907B612C15EF7F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E7BEA6C0CC87E950311D73EA606BE95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC559DDAC25627B095D84E2924E9A20A /* SwiftColor-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.3.4;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.3.4;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftColor/SwiftColor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftColor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftColor/SwiftColor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftColor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55C19390D6FAE99A22093055A7660D4E /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B528C12FBD127C9635CA827FCEDB4AC /* Debug */,
+				4D90E3F15075A030645BE7EE0F61018C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F43CE21901E661F7F4D755F713CA733 /* Build configuration list for PBXNativeTarget "SwiftColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7BEA6C0CC87E950311D73EA606BE95E /* Debug */,
+				41A6C5B621EC09D46B94A0688B754667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
