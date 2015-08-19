@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DEO-vK-da2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <scenes>
+        <!--购物车-->
+        <scene sceneID="65n-5R-dpy">
+            <objects>
+                <viewController id="9kT-6m-iTP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wkr-gB-D9M"/>
+                        <viewControllerLayoutGuide type="bottom" id="hx0-MP-7t2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3D4-p7-tag">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="购物车" id="zrp-07-wja"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xcu-Ur-CZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="450" y="913"/>
+        </scene>
+        <!--购物车-->
+        <scene sceneID="e9V-hh-wXX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DEO-vK-da2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="购物车" image="buy" id="mAZ-2Z-hRz"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="S97-Rh-8g1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9kT-6m-iTP" kind="relationship" relationship="rootViewController" id="IMn-Hk-t6d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ed-Or-Xzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-44" y="913"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buy" width="32" height="32"/>
+    </resources>
+</document>

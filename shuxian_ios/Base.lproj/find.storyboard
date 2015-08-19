@@ -31,7 +31,7 @@
                     <tabBarItem key="tabBarItem" title="发现" image="find" id="4Nm-zt-MZH"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nwx-h9-c5M">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="nwx-h9-c5M">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
