@@ -7,17 +7,37 @@
 //
 
 import UIKit
+import OTTableHeaderView
+
 
 class MyViewController: UITableViewController {
 
+    
+    @IBOutlet weak var myTopImage: UIImageView!
+    
+    @IBOutlet var myTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+//        UIImageView *imgView = [[UIImageView alloc] initWithFrame:frame];
+//        imgView.image = [UIImage imageNamed:@"testImg"];
+//        imgView.autoresizingMask = (1<<6) - 1;
+//        [header.backgroundView addSubview:imgView];
+        
+        
+        
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        let frame:CGRect = CGRectMake(0,0, UIScreen.mainScreen().bounds.size.width, 200)
+        
+        var header:OTTableHeaderView = OTTableHeaderView(frame:frame, tableView: myTableView);
+        
+        header.backgroundView.addSubview(myTopImage)
+        
+        self.myTableView.tableHeaderView = header
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

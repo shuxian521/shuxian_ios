@@ -24,6 +24,7 @@
                             <rect key="frame" x="0.0" y="64" width="320" height="180"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <animations/>
+                            <color key="backgroundColor" red="0.17254901959999999" green="0.7725490196" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="320" id="d4U-8m-vRf"/>
                                 <constraint firstAttribute="height" constant="180" id="epO-WV-QT7"/>
@@ -109,10 +110,14 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="F8V-vX-OgB"/>
                     <navigationItem key="navigationItem" title="我的" id="6jk-dZ-AT5"/>
+                    <connections>
+                        <outlet property="myTableView" destination="mS1-f6-D5X" id="cql-BD-X9h"/>
+                        <outlet property="myTopImage" destination="5Dm-O3-5UB" id="ZzG-ZK-yMK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCr-th-Y6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-80" y="600"/>
+            <point key="canvasLocation" x="-92" y="600"/>
         </scene>
         <!--我的-->
         <scene sceneID="nBE-Nt-gkv">
