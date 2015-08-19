@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="V2z-bv-YYK">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+    </dependencies>
+    <scenes>
+        <!--登录-->
+        <scene sceneID="N7l-mX-Sim">
+            <objects>
+                <viewController id="Ez7-1S-Ofc" customClass="LoginViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x9b-pB-2Kt"/>
+                        <viewControllerLayoutGuide type="bottom" id="g7Z-vb-OvI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SKa-yz-pjd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logintop" translatesAutoresizingMaskIntoConstraints="NO" id="EPZ-LY-Z1m">
+                                <rect key="frame" x="40" y="100" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="PjF-Mf-OxM"/>
+                                    <constraint firstAttribute="width" constant="240" id="VvC-hV-Hs3"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0Mb-Ax-QZz">
+                                <rect key="frame" x="20" y="259" width="280" height="64"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机号/用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9dd-mS-EhU">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xBv-ch-UYT">
+                                        <rect key="frame" x="0.0" y="34" width="280" height="30"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RyZ-f7-0p8">
+                                <rect key="frame" x="40" y="373" width="240" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNn-Xp-hbx">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="注册用户"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLW-K0-y9n">
+                                        <rect key="frame" x="120" y="0.0" width="120" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="登录"/>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGr-Gg-mWQ">
+                                <rect key="frame" x="229" y="331" width="60" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="11"/>
+                                <state key="normal" title="忘记密码?"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.9882352941176471" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EPZ-LY-Z1m" firstAttribute="top" secondItem="x9b-pB-2Kt" secondAttribute="bottom" constant="36" id="2PA-Y9-2Tj"/>
+                            <constraint firstItem="RyZ-f7-0p8" firstAttribute="leading" secondItem="SKa-yz-pjd" secondAttribute="leading" constant="40" id="3xh-tr-u2n"/>
+                            <constraint firstAttribute="trailing" secondItem="RyZ-f7-0p8" secondAttribute="trailing" constant="40" id="eWj-gE-zcL"/>
+                            <constraint firstAttribute="trailing" secondItem="0Mb-Ax-QZz" secondAttribute="trailing" constant="20" id="rhw-a9-Czs"/>
+                            <constraint firstItem="0Mb-Ax-QZz" firstAttribute="leading" secondItem="SKa-yz-pjd" secondAttribute="leading" constant="20" id="t1J-mC-AC4"/>
+                            <constraint firstItem="EPZ-LY-Z1m" firstAttribute="centerX" secondItem="SKa-yz-pjd" secondAttribute="centerX" id="taE-uv-IAD"/>
+                            <constraint firstItem="RyZ-f7-0p8" firstAttribute="top" secondItem="0Mb-Ax-QZz" secondAttribute="bottom" constant="50" id="v58-zr-iVU"/>
+                            <constraint firstItem="0Mb-Ax-QZz" firstAttribute="top" secondItem="EPZ-LY-Z1m" secondAttribute="bottom" constant="31" id="wcP-DY-WXu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="登录" id="aQx-eg-9PM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPm-gs-Xj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496" y="937"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xgv-No-7yP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V2z-bv-YYK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dHW-9W-FgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ez7-1S-Ofc" kind="relationship" relationship="rootViewController" id="TLl-U4-vc2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWc-nw-FwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="937"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logintop" width="238" height="126"/>
+    </resources>
+</document>
