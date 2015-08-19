@@ -45,20 +45,20 @@
             </objects>
             <point key="canvasLocation" x="-694" y="424"/>
         </scene>
-        <!--home-->
+        <!--Home-->
         <scene sceneID="WUJ-hF-zLR">
             <objects>
-                <viewControllerPlaceholder storyboardName="home" id="gSw-ky-RNe" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" id="gSw-ky-RNe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="yvV-UA-dvw"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iFV-4b-hhv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="323" y="96"/>
         </scene>
-        <!--find-->
+        <!--Find-->
         <scene sceneID="3qk-DD-MK8">
             <objects>
-                <viewControllerPlaceholder storyboardName="find" id="bgN-xk-y7Z" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Find" id="bgN-xk-y7Z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="UbX-Jh-IK0"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QL7-AE-c0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
