@@ -1,59 +1,93 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A235d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CxT-Xi-xzN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="amF-lf-GFO">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
     <scenes>
         <!--首页-->
-        <scene sceneID="5cA-9c-fsK">
+        <scene sceneID="sTn-Af-aSh">
             <objects>
-                <viewController id="O1G-xu-oEt" customClass="HomeViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="A5g-0s-wyA"/>
-                        <viewControllerLayoutGuide type="bottom" id="i1b-gv-2K1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="c8o-Je-y8J">
+                <collectionViewController id="1u5-q0-Opw" customClass="HomeCollectionViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ama-4d-8M7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="首页" id="eFo-WM-58U">
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="ba">
-                                <color key="value" red="0.99877290575916233" green="0.99877290575916233" blue="0.99877290575916233" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hco-8x-Qrv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="w6E-Td-2XC">
+                            <size key="itemSize" width="108" height="106"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="l82-ER-RMO" customClass="HomeCollectionViewCell" customModule="shuxian_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="108" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="108" height="106"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="蔬菜" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biY-in-iUb">
+                                            <rect key="frame" x="50" y="8" width="34" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zL-qX-n0b">
+                                            <rect key="frame" x="24" y="41" width="60" height="57"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.7725490196" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="sectionInset">
+                                        <rect key="value" x="10" y="0.0" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="homeCellImage" destination="8zL-qX-n0b" id="2CS-Z1-DdV"/>
+                                    <outlet property="name" destination="biY-in-iUb" id="6W9-zE-Z7e"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="1u5-q0-Opw" id="Xwq-sq-ONY"/>
+                            <outlet property="delegate" destination="1u5-q0-Opw" id="Qte-f8-JYc"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="首页" id="d9e-6T-LAh"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Stn-UT-kwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="96"/>
+            <point key="canvasLocation" x="402" y="614"/>
         </scene>
         <!--首页-->
-        <scene sceneID="rwj-gx-ViU">
+        <scene sceneID="G2m-D4-1jb">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CxT-Xi-xzN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="home" id="9WI-gH-mRe"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="amF-lf-GFO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="home" id="qhg-Sc-2bp"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="WrV-cH-utH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="AHZ-hV-GbB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
-                        <color key="backgroundColor" red="1" green="0.28065022257430594" blue="0.25597785238948234" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="O1G-xu-oEt" kind="relationship" relationship="rootViewController" id="Ls7-c4-SSK"/>
+                        <segue destination="1u5-q0-Opw" kind="relationship" relationship="rootViewController" id="cNG-xG-26T"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AEo-Jl-bNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uU-9p-oYm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="323" y="96"/>
+            <point key="canvasLocation" x="-118" y="619"/>
         </scene>
     </scenes>
     <resources>
-        <image name="home" width="33" height="33"/>
+        <image name="home" width="32" height="32"/>
     </resources>
 </document>
