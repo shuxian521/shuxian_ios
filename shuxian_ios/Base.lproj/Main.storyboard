@@ -35,15 +35,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="wed-xL-Sy9" kind="relationship" relationship="viewControllers" id="jIS-KQ-ymc"/>
                         <segue destination="bgN-xk-y7Z" kind="relationship" relationship="viewControllers" id="I58-0o-cCl"/>
                         <segue destination="MRH-1w-ov8" kind="relationship" relationship="viewControllers" id="OzO-ec-3u2"/>
                         <segue destination="cUB-ae-JYJ" kind="relationship" relationship="viewControllers" id="b0L-nx-10P"/>
-                        <segue destination="wed-xL-Sy9" kind="relationship" relationship="viewControllers" id="jIS-KQ-ymc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYs-Je-7vV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-782" y="-8"/>
+            <point key="canvasLocation" x="-694" y="-10"/>
         </scene>
         <!--Find-->
         <scene sceneID="3qk-DD-MK8">
@@ -73,7 +73,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHs-tQ-GrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-479" y="600"/>
+            <point key="canvasLocation" x="-65.5" y="176"/>
         </scene>
         <!--Home-->
         <scene sceneID="8HZ-Yx-FNR">
@@ -83,7 +83,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="An4-ZE-Px6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-118" y="619"/>
+            <point key="canvasLocation" x="-60" y="122"/>
         </scene>
     </scenes>
 </document>

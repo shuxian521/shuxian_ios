@@ -15,17 +15,32 @@ class HomeCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //添加collectionView Header
+        let headerView: ParallaxHeaderView = ParallaxHeaderView.parallaxHeaderViewWithImage(UIImage(named: "mytop"), forSize: CGSizeMake((self.collectionView?.frame.width)!, 200)) as! ParallaxHeaderView
+        
+        self.collectionView?.addSubview(headerView)
+        
+//        layout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width /3, [UIScreen mainScreen].bounds.size.width /3);
+        
+        self.collectionView?.contentSize = CGSize(width: UIScreen.mainScreen().bounds.size.width * 13, height: UIScreen.mainScreen().bounds.size.width * 13)
+      
+        
+
+        
         self.navigationController?.navigationBar.barTintColor = Color(hexString: "#228B22")
 
+        //设置背景颜色
         self.collectionView?.backgroundColor = Color.whiteColor()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
 
-        // Register cell classes
-//        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-//
-        // Do any additional setup after loading the view.
+        
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        
+    }
+    
+   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -57,12 +72,15 @@ class HomeCollectionViewController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
           let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! HomeCollectionViewCell
-    cell.name.text = "蔬菜"
+        cell.name.text = "蔬菜"
         cell.homeCellImage.image = UIImage(named: "mytop")
         return cell
     }
 
     // MARK: UICollectionViewDelegate
+    
+    
+    
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
