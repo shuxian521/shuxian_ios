@@ -16,7 +16,7 @@ class MyViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        //添加tableHeaderView
         let headerView: ParallaxHeaderView = ParallaxHeaderView.parallaxHeaderViewWithImage(UIImage(named: "mytop"), forSize: CGSizeMake(self.tableView.frame.size.width, 200)) as! ParallaxHeaderView
         self.tableView.tableHeaderView = headerView
 
@@ -26,22 +26,18 @@ class MyViewController: UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        //         [(ParallaxHeaderView *)self.mainTableView.tableHeaderView refreshBlurViewForNewImage];
-        //
-        
+      
+        //添加tableHeaderView
         let header: ParallaxHeaderView = self.tableView.tableHeaderView as! ParallaxHeaderView
-        
         header.refreshBlurViewForNewImage()
-        
         self.tableView.tableHeaderView = header
     }
     
+    //MARK: 滑动操作
     override func  scrollViewDidScroll(scrollView: UIScrollView) {
         if (scrollView == self.tableView){
-            
             let header: ParallaxHeaderView = self.tableView.tableHeaderView as! ParallaxHeaderView
             header.layoutHeaderViewForScrollViewOffset(scrollView.contentOffset)
-            
             self.tableView.tableHeaderView = header
         }
     }
