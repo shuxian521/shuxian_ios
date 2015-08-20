@@ -3,3 +3,5 @@
 //
 
 
+#import "ParallaxHeaderView.h"
+#import "UIImage+ImageEffects.h"

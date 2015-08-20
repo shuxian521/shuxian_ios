@@ -7,37 +7,43 @@
 //
 
 import UIKit
-import OTTableHeaderView
+ 
 
 
 class MyViewController: UITableViewController {
 
     
-    @IBOutlet weak var myTopImage: UIImageView!
-    
-    @IBOutlet var myTableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-//        UIImageView *imgView = [[UIImageView alloc] initWithFrame:frame];
-//        imgView.image = [UIImage imageNamed:@"testImg"];
-//        imgView.autoresizingMask = (1<<6) - 1;
-//        [header.backgroundView addSubview:imgView];
-        
-        
-        
+        let headerView: ParallaxHeaderView = ParallaxHeaderView.parallaxHeaderViewWithImage(UIImage(named: "mytop"), forSize: CGSizeMake(self.tableView.frame.size.width, 200)) as! ParallaxHeaderView
+        self.tableView.tableHeaderView = headerView
 
-        let frame:CGRect = CGRectMake(0,0, UIScreen.mainScreen().bounds.size.width, 200)
-        
-        var header:OTTableHeaderView = OTTableHeaderView(frame:frame, tableView: myTableView);
-        
-        header.backgroundView.addSubview(myTopImage)
-        
-        self.myTableView.tableHeaderView = header
         
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        //         [(ParallaxHeaderView *)self.mainTableView.tableHeaderView refreshBlurViewForNewImage];
+        //
+        
+        let header: ParallaxHeaderView = self.tableView.tableHeaderView as! ParallaxHeaderView
+        
+        header.refreshBlurViewForNewImage()
+        
+        self.tableView.tableHeaderView = header
+    }
+    
+    override func  scrollViewDidScroll(scrollView: UIScrollView) {
+        if (scrollView == self.tableView){
+            
+            let header: ParallaxHeaderView = self.tableView.tableHeaderView as! ParallaxHeaderView
+            header.layoutHeaderViewForScrollViewOffset(scrollView.contentOffset)
+            
+            self.tableView.tableHeaderView = header
+        }
     }
 
     override func didReceiveMemoryWarning() {
