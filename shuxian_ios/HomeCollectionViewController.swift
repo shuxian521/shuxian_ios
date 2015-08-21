@@ -11,25 +11,17 @@ import SwiftColor
 
 private let reuseIdentifier = "Cell"
 
-class HomeCollectionViewController: UICollectionViewController {
+class HomeCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         //添加collectionView Header
         let headerView: ParallaxHeaderView = ParallaxHeaderView.parallaxHeaderViewWithImage(UIImage(named: "mytop"), forSize: CGSizeMake((self.collectionView?.frame.width)!, 200)) as! ParallaxHeaderView
-        
         self.collectionView?.addSubview(headerView)
         
-//        layout.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width /3, [UIScreen mainScreen].bounds.size.width /3);
-        
-        self.collectionView?.contentSize = CGSize(width: UIScreen.mainScreen().bounds.size.width * 13, height: UIScreen.mainScreen().bounds.size.width * 13)
-      
-        
-
-        
+        //设置navigationBar背景颜色
         self.navigationController?.navigationBar.barTintColor = Color(hexString: "#228B22")
-
-        //设置背景颜色
+        //设置collectionView背景颜色
         self.collectionView?.backgroundColor = Color.whiteColor()
 
         
@@ -40,8 +32,6 @@ class HomeCollectionViewController: UICollectionViewController {
         
     }
     
-   
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -76,12 +66,30 @@ class HomeCollectionViewController: UICollectionViewController {
         cell.homeCellImage.image = UIImage(named: "mytop")
         return cell
     }
+    
+    
+    // MARK:UICollectionViewDelegateFlowLayout
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+        return CGSizeMake((self.view.frame.width-20)/2, 200);
+
+        
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        
+        
+        
+        return UIEdgeInsetsMake(5, 5, 5, 5);
+
+    }
+    
+    
+    
 
     // MARK: UICollectionViewDelegate
     
-    
-    
-
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {

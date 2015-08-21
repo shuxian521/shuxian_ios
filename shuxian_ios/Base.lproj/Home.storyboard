@@ -12,18 +12,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="w6E-Td-2XC">
-                            <size key="itemSize" width="155" height="189"/>
-                            <size key="headerReferenceSize" width="375" height="240"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UFX-fE-Tw2">
+                            <size key="itemSize" width="155" height="190"/>
+                            <size key="headerReferenceSize" width="375" height="210"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="l82-ER-RMO" customClass="HomeCollectionViewCell" customModule="shuxian_ios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="304" width="155" height="189"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="Cell" id="l82-ER-RMO" customClass="HomeCollectionViewCell" customModule="shuxian_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="274" width="149" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="155" height="189"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="149" height="190"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8zL-qX-n0b">
@@ -43,14 +43,15 @@
                                 </view>
                                 <animations/>
                                 <color key="backgroundColor" red="0.17254901959999999" green="0.7725490196" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="customSize" width="149" height="190"/>
                                 <connections>
                                     <outlet property="homeCellImage" destination="8zL-qX-n0b" id="2CS-Z1-DdV"/>
                                     <outlet property="name" destination="biY-in-iUb" id="6W9-zE-Z7e"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="okl-0N-LJb">
-                            <rect key="frame" x="0.0" y="64" width="320" height="240"/>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="OGP-KJ-YMN">
+                            <rect key="frame" x="0.0" y="64" width="320" height="210"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <animations/>
                         </collectionReusableView>
