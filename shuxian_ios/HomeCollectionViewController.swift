@@ -9,6 +9,7 @@
 import UIKit
 import SwiftColor
 
+
 private let reuseIdentifier = "Cell"
 
 class HomeCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
@@ -63,7 +64,19 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
           let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! HomeCollectionViewCell
         cell.name.text = "蔬菜"
-        cell.homeCellImage.image = UIImage(named: "mytop")
+        
+        if indexPath.row % 3 == 0{
+            cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/07/17/20150717102512934.jpg"))
+        }else if indexPath.row % 5 == 0 {
+            cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/08/20/20150820021222293.jpg"), placeholderImage: UIImage(named: "mytop"))
+        }else if indexPath.row % 9 == 0 {
+            cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/08/20/20150820022651500.jpg"), placeholderImage: UIImage(named: "mytop"))
+            
+        }else{
+            cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/07/28/20150728082155116.jpg"), placeholderImage: UIImage(named: "mytop"))
+            
+        }
+        
         return cell
     }
     
@@ -72,7 +85,7 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
-        return CGSizeMake((self.view.frame.width-20)/2, 200);
+        return CGSizeMake((self.view.frame.width-10)/2, 190);
 
         
     }
@@ -81,7 +94,7 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
         
         
         
-        return UIEdgeInsetsMake(5, 5, 5, 5);
+        return UIEdgeInsetsMake(5, 0, 5, 0);
 
     }
     

@@ -5,3 +5,5 @@
 
 #import "ParallaxHeaderView.h"
 #import "UIImage+ImageEffects.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>
