@@ -8,20 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		51285DCCF8832820A9BEAE71 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA30B170095359C469D8EECB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AB28A8AF1B8B210000D251F8 /* AdView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB28A8AE1B8B210000D251F8 /* AdView.m */; };
 		AB327F621B8318AE00FA7EA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB327F611B8318AE00FA7EA1 /* AppDelegate.swift */; };
 		AB327F641B8318AE00FA7EA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB327F631B8318AE00FA7EA1 /* ViewController.swift */; };
 		AB327F671B8318AE00FA7EA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB327F651B8318AE00FA7EA1 /* Main.storyboard */; };
 		AB327F6A1B8318AE00FA7EA1 /* shuxian_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB327F681B8318AE00FA7EA1 /* shuxian_ios.xcdatamodeld */; };
 		AB327F6C1B8318AE00FA7EA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB327F6B1B8318AE00FA7EA1 /* Assets.xcassets */; };
 		AB327F6F1B8318AE00FA7EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB327F6D1B8318AE00FA7EA1 /* LaunchScreen.storyboard */; };
-		AB327F781B8320A600FA7EA1 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB327F761B8320A600FA7EA1 /* home.storyboard */; };
-		AB327F7C1B8320D200FA7EA1 /* find.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB327F7A1B8320D200FA7EA1 /* find.storyboard */; };
-		AB327F7F1B8327B100FA7EA1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB327F7E1B8327B100FA7EA1 /* HomeViewController.swift */; };
+		AB327F7C1B8320D200FA7EA1 /* Find.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB327F7A1B8320D200FA7EA1 /* Find.storyboard */; };
+		AB6157AF1B847A60007774B7 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6157AE1B847A60007774B7 /* My.storyboard */; };
+		AB6157B11B847EDC007774B7 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6157B01B847EDC007774B7 /* MyViewController.swift */; };
+		AB7CDE601B85C25A0075344D /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CDE5F1B85C25A0075344D /* HomeCollectionViewController.swift */; };
+		AB7CDE621B85C29D0075344D /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CDE611B85C29D0075344D /* HomeCollectionViewCell.swift */; };
+		AB7CDE651B85C8C40075344D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7CDE631B85C8C40075344D /* Home.storyboard */; };
+		AB8CA87C1B8420B600E30C13 /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8CA87A1B8420B600E30C13 /* Buy.storyboard */; };
+		AB8CA8831B84386300E30C13 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CA8821B84386300E30C13 /* LoginViewController.swift */; };
+		AB8CA8861B84387000E30C13 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8CA8841B84387000E30C13 /* Login.storyboard */; };
+		ABE271921B857BAF007E6366 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2718F1B857BAF007E6366 /* UIImage+ImageEffects.m */; };
+		ABE271931B857BAF007E6366 /* ParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE271911B857BAF007E6366 /* ParallaxHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		886EBF895BE7E8CEB1E3D33E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		925C1D3126FE0796EEEC4382 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AB28A8AD1B8B210000D251F8 /* AdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdView.h; sourceTree = "<group>"; };
+		AB28A8AE1B8B210000D251F8 /* AdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdView.m; sourceTree = "<group>"; };
 		AB327F5E1B8318AE00FA7EA1 /* shuxian_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shuxian_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB327F611B8318AE00FA7EA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB327F631B8318AE00FA7EA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,9 +41,20 @@
 		AB327F6B1B8318AE00FA7EA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB327F6E1B8318AE00FA7EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB327F701B8318AE00FA7EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB327F771B8320A600FA7EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/home.storyboard; sourceTree = "<group>"; };
-		AB327F7B1B8320D200FA7EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/find.storyboard; sourceTree = "<group>"; };
-		AB327F7E1B8327B100FA7EA1 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AB327F7B1B8320D200FA7EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Find.storyboard; sourceTree = "<group>"; };
+		AB6157AE1B847A60007774B7 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
+		AB6157B01B847EDC007774B7 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		AB7CDE5F1B85C25A0075344D /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		AB7CDE611B85C29D0075344D /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		AB7CDE641B85C8C40075344D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		AB8CA87B1B8420B600E30C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Buy.storyboard; sourceTree = "<group>"; };
+		AB8CA8821B84386300E30C13 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AB8CA8851B84387000E30C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		ABB1A0591B8483C30055D06A /* shuxian_ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shuxian_ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABE2718E1B857BAF007E6366 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		ABE2718F1B857BAF007E6366 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		ABE271901B857BAF007E6366 /* ParallaxHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxHeaderView.h; sourceTree = "<group>"; };
+		ABE271911B857BAF007E6366 /* ParallaxHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParallaxHeaderView.m; sourceTree = "<group>"; };
 		FA30B170095359C469D8EECB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,6 +70,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB28A89C1B8AFF2700D251F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AB28A8AC1B8B20F300D251F8 /* AdView */ = {
+			isa = PBXGroup;
+			children = (
+				AB28A8AD1B8B210000D251F8 /* AdView.h */,
+				AB28A8AE1B8B210000D251F8 /* AdView.m */,
+			);
+			name = AdView;
+			sourceTree = "<group>";
+		};
 		AB327F551B8318AE00FA7EA1 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +107,8 @@
 		AB327F601B8318AE00FA7EA1 /* shuxian_ios */ = {
 			isa = PBXGroup;
 			children = (
+				AB28A89C1B8AFF2700D251F8 /* Resources */,
+				ABF3347C1B85B7E600C88D6E /* Views */,
 				AB327F801B83295100FA7EA1 /* Utils */,
 				AB327F7D1B83279000FA7EA1 /* Controllers */,
 				AB327F791B8320AB00FA7EA1 /* sb */,
@@ -78,6 +118,7 @@
 				AB327F6D1B8318AE00FA7EA1 /* LaunchScreen.storyboard */,
 				AB327F701B8318AE00FA7EA1 /* Info.plist */,
 				AB327F681B8318AE00FA7EA1 /* shuxian_ios.xcdatamodeld */,
+				ABB1A0591B8483C30055D06A /* shuxian_ios-Bridging-Header.h */,
 			);
 			path = shuxian_ios;
 			sourceTree = "<group>";
@@ -86,8 +127,11 @@
 			isa = PBXGroup;
 			children = (
 				AB327F651B8318AE00FA7EA1 /* Main.storyboard */,
-				AB327F7A1B8320D200FA7EA1 /* find.storyboard */,
-				AB327F761B8320A600FA7EA1 /* home.storyboard */,
+				AB7CDE631B85C8C40075344D /* Home.storyboard */,
+				AB6157AE1B847A60007774B7 /* My.storyboard */,
+				AB8CA8841B84387000E30C13 /* Login.storyboard */,
+				AB8CA87A1B8420B600E30C13 /* Buy.storyboard */,
+				AB327F7A1B8320D200FA7EA1 /* Find.storyboard */,
 			);
 			name = sb;
 			sourceTree = "<group>";
@@ -95,7 +139,9 @@
 		AB327F7D1B83279000FA7EA1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AB327F7E1B8327B100FA7EA1 /* HomeViewController.swift */,
+				AB8CA8821B84386300E30C13 /* LoginViewController.swift */,
+				AB6157B01B847EDC007774B7 /* MyViewController.swift */,
+				AB7CDE5F1B85C25A0075344D /* HomeCollectionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -103,8 +149,21 @@
 		AB327F801B83295100FA7EA1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				AB28A8AC1B8B20F300D251F8 /* AdView */,
+				ABE2718E1B857BAF007E6366 /* UIImage+ImageEffects.h */,
+				ABE2718F1B857BAF007E6366 /* UIImage+ImageEffects.m */,
+				ABE271901B857BAF007E6366 /* ParallaxHeaderView.h */,
+				ABE271911B857BAF007E6366 /* ParallaxHeaderView.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		ABF3347C1B85B7E600C88D6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB7CDE611B85C29D0075344D /* HomeCollectionViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		BEB5349319396EC1ED606BED /* Frameworks */ = {
@@ -153,6 +212,7 @@
 		AB327F561B8318AE00FA7EA1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = itjh;
 				TargetAttributes = {
@@ -185,11 +245,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB8CA8861B84387000E30C13 /* Login.storyboard in Resources */,
 				AB327F6F1B8318AE00FA7EA1 /* LaunchScreen.storyboard in Resources */,
 				AB327F6C1B8318AE00FA7EA1 /* Assets.xcassets in Resources */,
+				AB6157AF1B847A60007774B7 /* My.storyboard in Resources */,
 				AB327F671B8318AE00FA7EA1 /* Main.storyboard in Resources */,
-				AB327F781B8320A600FA7EA1 /* home.storyboard in Resources */,
-				AB327F7C1B8320D200FA7EA1 /* find.storyboard in Resources */,
+				AB8CA87C1B8420B600E30C13 /* Buy.storyboard in Resources */,
+				AB327F7C1B8320D200FA7EA1 /* Find.storyboard in Resources */,
+				AB7CDE651B85C8C40075344D /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE271931B857BAF007E6366 /* ParallaxHeaderView.m in Sources */,
 				AB327F6A1B8318AE00FA7EA1 /* shuxian_ios.xcdatamodeld in Sources */,
 				AB327F641B8318AE00FA7EA1 /* ViewController.swift in Sources */,
+				ABE271921B857BAF007E6366 /* UIImage+ImageEffects.m in Sources */,
 				AB327F621B8318AE00FA7EA1 /* AppDelegate.swift in Sources */,
-				AB327F7F1B8327B100FA7EA1 /* HomeViewController.swift in Sources */,
+				AB7CDE621B85C29D0075344D /* HomeCollectionViewCell.swift in Sources */,
+				AB7CDE601B85C25A0075344D /* HomeCollectionViewController.swift in Sources */,
+				AB8CA8831B84386300E30C13 /* LoginViewController.swift in Sources */,
+				AB6157B11B847EDC007774B7 /* MyViewController.swift in Sources */,
+				AB28A8AF1B8B210000D251F8 /* AdView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,20 +343,36 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		AB327F761B8320A600FA7EA1 /* home.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB327F771B8320A600FA7EA1 /* Base */,
-			);
-			name = home.storyboard;
-			sourceTree = "<group>";
-		};
-		AB327F7A1B8320D200FA7EA1 /* find.storyboard */ = {
+		AB327F7A1B8320D200FA7EA1 /* Find.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AB327F7B1B8320D200FA7EA1 /* Base */,
 			);
-			name = find.storyboard;
+			name = Find.storyboard;
+			sourceTree = "<group>";
+		};
+		AB7CDE631B85C8C40075344D /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB7CDE641B85C8C40075344D /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		AB8CA87A1B8420B600E30C13 /* Buy.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB8CA87B1B8420B600E30C13 /* Base */,
+			);
+			name = Buy.storyboard;
+			sourceTree = "<group>";
+		};
+		AB8CA8841B84387000E30C13 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB8CA8851B84387000E30C13 /* Base */,
+			);
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -379,11 +464,14 @@
 			baseConfigurationReference = 886EBF895BE7E8CEB1E3D33E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = shuxian_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.shuxian.shuxian-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "shuxian_ios/shuxian_ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -392,11 +480,13 @@
 			baseConfigurationReference = 925C1D3126FE0796EEEC4382 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = shuxian_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.shuxian.shuxian-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "shuxian_ios/shuxian_ios-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -7,3 +7,6 @@
 #import "UIImage+ImageEffects.h"
 
 #import <SDWebImage/UIImageView+WebCache.h>
+
+#import "AdView.h"
+

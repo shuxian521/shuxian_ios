@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-694" y="1526"/>
+            <point key="canvasLocation" x="-634" y="1322"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jHz-wu-gW2">
@@ -53,7 +53,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QL7-AE-c0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-281" y="-85"/>
+            <point key="canvasLocation" x="-281" y="-115"/>
         </scene>
         <!--Buy-->
         <scene sceneID="xbg-sY-rqR">
@@ -63,7 +63,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clr-aj-IA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-282" y="-10"/>
+            <point key="canvasLocation" x="-282" y="-39"/>
         </scene>
         <!--My-->
         <scene sceneID="IpQ-J3-egT">
@@ -73,7 +73,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHs-tQ-GrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284.5" y="109"/>
+            <point key="canvasLocation" x="-284.5" y="102"/>
         </scene>
         <!--Home-->
         <scene sceneID="8HZ-Yx-FNR">
@@ -83,7 +83,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="An4-ZE-Px6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-276" y="55"/>
+            <point key="canvasLocation" x="-276" y="33"/>
         </scene>
     </scenes>
 </document>

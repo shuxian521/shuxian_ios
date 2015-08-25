@@ -76,7 +76,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Stn-UT-kwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="639" y="519"/>
+            <point key="canvasLocation" x="404" y="512"/>
         </scene>
         <!--首页-->
         <scene sceneID="G2m-D4-1jb">
