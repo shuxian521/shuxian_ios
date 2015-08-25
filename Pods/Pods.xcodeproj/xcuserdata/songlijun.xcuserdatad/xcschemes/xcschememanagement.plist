@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftColor.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>3AFAFD6895002956CF75604430501A36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>8D42E533A3E5913DE31461F43E614B67</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA0B8FB873C222792D883335A54E9E45</key>
+		<key>9666688CB41B38A9914616144C9C7A3E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

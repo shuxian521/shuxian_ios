@@ -9,12 +9,15 @@
 import UIKit
 import SwiftColor
 
+import StrechyParallaxScrollView
 
 
 private let reuseIdentifier = "Cell"
 
 class HomeCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
+    
+    var adView:AdView = AdView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +31,7 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
         //        self.collectionView?.addSubview(scrollView)
         //
         //
-        var adView:AdView = AdView()
+        
         //图片地址集合
         let imageURL = [ "https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a41eb338dd33c895a62bcb3bb72e47c2/5fdf8db1cb134954a2192ccb524e9258d1094a1e.jpg",
             "http://c.hiphotos.baidu.com/image/w%3D400/sign=c2318ff84334970a4773112fa5c8d1c0/b7fd5266d0160924c1fae5ccd60735fae7cd340d.jpg",
@@ -42,25 +45,18 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
         
         adView = AdView.adScrollViewWithFrame(CGRect(x: 0, y: 64, width: UIScreen.mainScreen().bounds.size.width, height: 190), imageLinkURL: imageURL, placeHoderImageName: "mytop", pageControlShowStyle: UIPageControlShowStyle.Left) as! AdView
         
-        
-        
         //是否滚动
         adView.isNeedCycleRoll = true
-        
         adView.setAdTitleArray(titles, withShowStyle: AdTitleShowStyle.Right)
-        
-        adView.adMoveTime = 3.0
-        
-        //        //点击图片回调
+        //自动滚动时间
+        adView.adMoveTime = 5.0
+        //点击图片回调
         adView.callBack = { (index ,imageURL) ->Void in
-            
-                print("你点击了\(index) 下标图片 --> 图片地址：\(imageURL)" )
- 
+            print("你点击了\(index) 下标图片 --> 图片地址：\(imageURL)" )
         }
-        //
+        
         self.collectionView?.addSubview(adView)
-        //
-        //
+        
         //设置navigationBar背景颜色
         self.navigationController?.navigationBar.barTintColor = Color(hexString: "#228B22")
         //设置collectionView背景颜色
@@ -104,7 +100,7 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! HomeCollectionViewCell
-        cell.name.text = "蔬菜"
+        cell.name.text = "四川大个石榴，颗颗晶莹，口感水甜"
         
         if indexPath.row % 3 == 0{
             cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/07/17/20150717102512934.jpg"))
@@ -126,7 +122,7 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
-        return CGSizeMake((self.view.frame.width-10)/2, 190);
+        return CGSizeMake((self.view.frame.width-10)/2, 200);
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
@@ -135,27 +131,38 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
         
     }
     
-    
-    
-    
+    /*设置Header大小*/
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        
         return CGSizeMake(self.view.frame.width, 300)
         
-        
+    }
+    /*设置Footer大小*/
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return CGSizeMake(self.view.frame.width, 45)
     }
     
-    
-    //    //MARK: 滑动操作
-    //    override func  scrollViewDidScroll(scrollView: UIScrollView) {
-    //        if (scrollView == self.collectionView){
-    //            let header: ParallaxHeaderView = self.collectionView.tableHeaderView as! ParallaxHeaderView
-    //            header.layoutHeaderViewForScrollViewOffset(scrollView.contentOffset)
-    //            self.tableView.tableHeaderView = header
-    //        }
-    //    }
-    //
-    
+//    /*添加Heard，footer*/
+//    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+//         
+//
+//        let strechy:StrechyParallaxScrollView = StrechyParallaxScrollView(frame: CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.size.width, height: 300), andTopView: adView)
+//         
+//        var v : UICollectionReusableView! = nil
+//        
+//        
+//        if kind == UICollectionElementKindSectionHeader {
+//            v = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier:"Header", forIndexPath:indexPath)
+//            v.addSubview(strechy)
+//        }
+//        
+//        if kind == UICollectionElementKindSectionFooter {
+//            
+//            v = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionFooter, withReuseIdentifier:"Footer", forIndexPath:indexPath)
+//            v.addSubview(strechy)
+//        }
+//        return v
+//    }
+//    
     
     // MARK: UICollectionViewDelegate
     

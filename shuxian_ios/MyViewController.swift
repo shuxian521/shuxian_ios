@@ -33,6 +33,8 @@ class MyViewController: UITableViewController {
         self.tableView.tableHeaderView = header
     }
     
+    
+    
     //MARK: 滑动操作
     override func  scrollViewDidScroll(scrollView: UIScrollView) {
         if (scrollView == self.tableView){

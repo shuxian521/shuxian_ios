@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "57EF19D92CF589E4747FAD94"
+               BlueprintIdentifier = "63FE1C1C3AEF3ECE9C196BF6"
                BuildableName = "SwiftColor.framework"
                BlueprintName = "SwiftColor"
                ReferencedContainer = "container:Pods.xcodeproj">
