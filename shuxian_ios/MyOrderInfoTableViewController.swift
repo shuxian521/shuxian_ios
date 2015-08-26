@@ -10,9 +10,11 @@
     订单详情
 */
 import UIKit
+import SwiftColor
 
 class MyOrderInfoTableViewController: UITableViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,8 @@ class MyOrderInfoTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,18 +41,67 @@ class MyOrderInfoTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 10
     }
 
     
-//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("myOrderInfoCell", forIndexPath: indexPath)
-//
-//        // Configure the cell...
-//
-//        return cell
-//    }
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> MyOrderInfoTableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("myOrderInfoCell", forIndexPath: indexPath) as! MyOrderInfoTableViewCell
+        
+        
+        print(indexPath.row)
+        
+        if indexPath.row == 0{
+            cell.phoneTextLabel!.text = "手机号："
+            cell.phoneNumLabel.text = "18626893929"
+            cell.phoneTextLabel.hidden = false
+            cell.phoneNumLabel.hidden = false
+        } else if indexPath.row == 9{
+            //显示总计
+            
+            cell.totalTextLabel!.text = "总计："
+            cell.totalIncomeLabel!.text = "9.90元"
+            
+            cell.totalTextLabel.hidden = false
+            cell.totalIncomeLabel.hidden = false
+        }else{
+            //显示蔬菜列表
+            cell.indexLabel.text = "\(indexPath.row)."
+            cell.indexLabel.hidden = false
+            
+            cell.nameLabel.text = "智利奇异果／2个约250g"
+            cell.nameLabel.hidden = false
+            
+            cell.nameImage.image = UIImage(named: "20150424070327960")
+            cell.nameImage.hidden = false
+            
+            cell.priceLabel.text = "￥9.90"
+            cell.priceLabel.hidden = false
+            
+            cell.amountLabel.text = "2份"
+            cell.amountLabel.hidden = false
+        }
+        
+        
+        return cell
+  
+    }
 
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat{
+      
+        if indexPath.row == 9{
+            return 60
+        }
+        
+        return 44
+    }
+    
+   override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat{
+        return 60
+
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -84,6 +137,8 @@ class MyOrderInfoTableViewController: UITableViewController {
         return true
     }
     */
+    
+    
 
     /*
     // MARK: - Navigation
