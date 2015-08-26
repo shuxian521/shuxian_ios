@@ -100,6 +100,9 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! HomeCollectionViewCell
+        
+       
+        
         cell.name.text = "四川大个石榴，颗颗晶莹，口感水甜"
         
         if indexPath.row % 3 == 0{

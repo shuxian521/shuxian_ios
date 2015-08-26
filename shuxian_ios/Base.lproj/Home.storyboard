@@ -117,7 +117,10 @@
                                 <size key="customSize" width="149" height="209"/>
                                 <connections>
                                     <outlet property="homeCellImage" destination="8zL-qX-n0b" id="2CS-Z1-DdV"/>
+                                    <outlet property="marketPrice" destination="fJl-m9-DKc" id="ZQQ-E0-zlT"/>
                                     <outlet property="name" destination="biY-in-iUb" id="6W9-zE-Z7e"/>
+                                    <outlet property="price" destination="I9O-eh-yyh" id="VQC-2f-SfN"/>
+                                    <outlet property="selltypeImage" destination="fW1-w8-tSF" id="R7B-az-05A"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
