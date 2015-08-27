@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+import SwiftColor
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,8 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-       
         
+//        // Change status bar style
+//        UIApplication.sharedApplication().statusBarStyle = .LightContent
+//        // Change navigation bar appearance
+//        UINavigationBar.appearance().barTintColor = Color(hexString: "#448F38")
+//        
+//        //设置UINavigationBar title颜色，字体
+//        if let barFont = UIFont(name: "AvenirNextCondensed-DemiBold", size: 18.0) {
+//            UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:Color(hexString: "#228B22"), NSFontAttributeName:barFont]
+//        }
+// 
         
         return true
     }

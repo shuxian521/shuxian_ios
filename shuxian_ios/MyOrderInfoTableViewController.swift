@@ -18,18 +18,15 @@ class MyOrderInfoTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-//
-//        self.tableView.tableHeaderView = headerView
         
-
+        self.title = "订单详情"
         
+//        self.navigationController?.navigationBar.titleTextAttributes = setTitleDic
+        
+//        UINavigationBar.appearance().titleTextAttributes =
+//            NSForegroundColorAttributeName:UIColor.whiteColor(), NSFontAttributeName:UIFont(name:
+//                "AvenirNextCondensed-DemiBold", size: 22.0)
     }
 
     override func didReceiveMemoryWarning() {
