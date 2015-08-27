@@ -28,7 +28,7 @@
         <scene sceneID="OvH-NZ-wdh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q1C-Iv-QIC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发现" image="find" id="4Nm-zt-MZH"/>
+                    <tabBarItem key="tabBarItem" title="发现" image="west_direction" id="4Nm-zt-MZH"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="nwx-h9-c5M">
@@ -47,6 +47,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="find" width="22" height="22"/>
+        <image name="west_direction" width="31" height="31"/>
     </resources>
 </document>

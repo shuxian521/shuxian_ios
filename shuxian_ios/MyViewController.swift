@@ -7,7 +7,7 @@
 //
 
 import UIKit
- 
+import SwiftColor
 
 
 class MyViewController: UITableViewController {
@@ -19,6 +19,17 @@ class MyViewController: UITableViewController {
         //添加tableHeaderView
         let headerView: ParallaxHeaderView = ParallaxHeaderView.parallaxHeaderViewWithImage(UIImage(named: "mytop"), forSize: CGSizeMake(self.tableView.frame.size.width, 200)) as! ParallaxHeaderView
         self.tableView.tableHeaderView = headerView
+        
+        //设置UINavigationBar title颜色，字体
+        self.navigationController?.navigationBar.barTintColor = Color(hexString:"#FEFEFE")
+        if let barFont = UIFont(name: "AvenirNextCondensed-DemiBold", size: 18.0) {
+            self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:Color(hexString: "#228B22"), NSFontAttributeName:barFont]
+        }
+        
+        //设置item
+//        self.navigationController?.navigationItem.
+        
+        
 
         
         
