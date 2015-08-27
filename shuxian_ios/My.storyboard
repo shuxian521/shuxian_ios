@@ -279,7 +279,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1F440AD9-EC09-46DD-AB77-630F8F454B45" translatesAutoresizingMaskIntoConstraints="NO" id="THV-I5-JUB">
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2F6ECB7E-F9EE-4AEC-9A96-2B9D7D055749" translatesAutoresizingMaskIntoConstraints="NO" id="THV-I5-JUB">
                                             <rect key="frame" x="180" y="12" width="54" height="15"/>
                                             <animations/>
                                             <constraints>
@@ -371,8 +371,63 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="订单详情" id="b92-Ie-mCj"/>
+                    <connections>
+                        <outlet property="headerView" destination="TGO-Nd-pGs" id="ahj-RV-2jZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uO-i2-x5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="TGO-Nd-pGs">
+                    <rect key="frame" x="0.0" y="0.0" width="377" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="甜水园提货点" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78B-Lv-8oz">
+                            <rect key="frame" x="17" y="14" width="149" height="21"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="149" id="Czl-ET-Nuw"/>
+                                <constraint firstAttribute="height" constant="21" id="fDo-7U-lbM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Xa-EE-eKE">
+                            <rect key="frame" x="245" y="9" width="116" height="32"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="782218361" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVp-zh-cMb">
+                                    <rect key="frame" x="52" y="9" width="64" height="15"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="提货码：" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfu-oG-0p5">
+                                    <rect key="frame" x="8" y="9" width="48" height="15"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" red="0.12156862745098039" green="0.4703349124884853" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="20v-iK-9me"/>
+                                <constraint firstAttribute="width" constant="116" id="wTf-3z-tpT"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.26666666666666666" green="0.5607843137254902" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="9Xa-EE-eKE" firstAttribute="leading" secondItem="78B-Lv-8oz" secondAttribute="trailing" constant="79" id="C4O-l7-vQA"/>
+                        <constraint firstItem="78B-Lv-8oz" firstAttribute="leading" secondItem="TGO-Nd-pGs" secondAttribute="leading" constant="17" id="FHR-Qg-rqj"/>
+                        <constraint firstItem="78B-Lv-8oz" firstAttribute="top" secondItem="TGO-Nd-pGs" secondAttribute="top" constant="14" id="T3Y-U1-QcQ"/>
+                        <constraint firstAttribute="trailing" secondItem="9Xa-EE-eKE" secondAttribute="trailing" constant="14" id="WpZ-kt-1D6"/>
+                        <constraint firstAttribute="bottom" secondItem="78B-Lv-8oz" secondAttribute="bottom" constant="15" id="dh6-rD-xYo"/>
+                        <constraint firstItem="9Xa-EE-eKE" firstAttribute="top" secondItem="TGO-Nd-pGs" secondAttribute="top" constant="9" id="jZO-MC-BBG"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="868" y="592"/>
         </scene>
@@ -458,7 +513,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FD03556E-69AF-4CBD-9BA0-E7616754721E" translatesAutoresizingMaskIntoConstraints="NO" id="PlL-6P-zgg">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="541C8395-1B60-4288-97D5-B54B8785F2F4" translatesAutoresizingMaskIntoConstraints="NO" id="PlL-6P-zgg">
                                             <rect key="frame" x="163" y="8" width="63" height="15"/>
                                             <animations/>
                                         </imageView>
@@ -522,7 +577,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1F440AD9-EC09-46DD-AB77-630F8F454B45" width="53" height="14">
+        <image name="2F6ECB7E-F9EE-4AEC-9A96-2B9D7D055749" width="53" height="14">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -623,7 +678,7 @@ FX8VgxWKFZIVnxWkFaYVqBWtFbUVuBW9FcUVyBXaFd0V4gAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAA
 AAAAABXkA
 </mutableData>
         </image>
-        <image name="FD03556E-69AF-4CBD-9BA0-E7616754721E" width="53" height="14">
+        <image name="541C8395-1B60-4288-97D5-B54B8785F2F4" width="53" height="14">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

@@ -14,6 +14,7 @@ import SwiftColor
 
 class MyOrderInfoTableViewController: UITableViewController {
 
+    @IBOutlet var headerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +25,8 @@ class MyOrderInfoTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-//        
-        let headerView = UIView()
-        headerView.frame = CGRectMake(0, 0, self.view.frame.width, 60)
-        headerView.backgroundColor =  Color(hexString: "#228B22")
-        self.tableView.tableHeaderView = headerView
+//
+//        self.tableView.tableHeaderView = headerView
         
 
         
@@ -115,8 +113,18 @@ class MyOrderInfoTableViewController: UITableViewController {
     }
     
    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat{
-        return 60
+        return 50
 
+    }
+    
+    //添加HeaderView
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+//        let headerView = UIView()
+//        headerView.frame = CGRectMake(0, 0, self.view.frame.width, 60)
+//        headerView.backgroundColor =  Color(hexString: "#228B22")
+//        
+        return headerView
     }
 
     /*
