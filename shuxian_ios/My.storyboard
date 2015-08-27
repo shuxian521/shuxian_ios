@@ -220,17 +220,17 @@
         <scene sceneID="hpb-dl-j3q">
             <objects>
                 <tableViewController id="FRJ-aS-Sss" customClass="MyOrderInfoTableViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="232" sectionHeaderHeight="28" sectionFooterHeight="28" id="pfm-hb-YYM">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="pfm-hb-YYM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myOrderInfoCell" rowHeight="232" id="1Mi-qT-Rbh" customClass="MyOrderInfoTableViewCell" customModule="shuxian_ios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="320" height="232"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myOrderInfoCell" rowHeight="60" id="1Mi-qT-Rbh" customClass="MyOrderInfoTableViewCell" customModule="shuxian_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Mi-qT-Rbh" id="vF2-n8-nph">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="231.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYr-ex-tXL">
@@ -279,7 +279,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2D55E2CD-0E91-487B-A7DC-A00306C0B905" translatesAutoresizingMaskIntoConstraints="NO" id="THV-I5-JUB">
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1F440AD9-EC09-46DD-AB77-630F8F454B45" translatesAutoresizingMaskIntoConstraints="NO" id="THV-I5-JUB">
                                             <rect key="frame" x="180" y="12" width="54" height="15"/>
                                             <animations/>
                                             <constraints>
@@ -400,7 +400,6 @@
         <!--订单详情-->
         <scene sceneID="z2O-w7-fGM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JrD-PI-Dnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="xZt-pW-PzN" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="qBH-Ii-Zqd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -459,7 +458,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2325A322-4463-4321-866B-8C9C1EB2C2AB" translatesAutoresizingMaskIntoConstraints="NO" id="PlL-6P-zgg">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FD03556E-69AF-4CBD-9BA0-E7616754721E" translatesAutoresizingMaskIntoConstraints="NO" id="PlL-6P-zgg">
                                             <rect key="frame" x="163" y="8" width="63" height="15"/>
                                             <animations/>
                                         </imageView>
@@ -517,12 +516,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="订单详情" id="onx-Md-Ecw"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JrD-PI-Dnk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1243" y="592"/>
         </scene>
     </scenes>
     <resources>
-        <image name="2325A322-4463-4321-866B-8C9C1EB2C2AB" width="53" height="14">
+        <image name="1F440AD9-EC09-46DD-AB77-630F8F454B45" width="53" height="14">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -623,7 +623,7 @@ FX8VgxWKFZIVnxWkFaYVqBWtFbUVuBW9FcUVyBXaFd0V4gAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAA
 AAAAABXkA
 </mutableData>
         </image>
-        <image name="2D55E2CD-0E91-487B-A7DC-A00306C0B905" width="53" height="14">
+        <image name="FD03556E-69AF-4CBD-9BA0-E7616754721E" width="53" height="14">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

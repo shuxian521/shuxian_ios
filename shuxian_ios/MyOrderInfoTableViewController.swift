@@ -24,6 +24,13 @@ class MyOrderInfoTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
+//        
+        let headerView = UIView()
+        headerView.frame = CGRectMake(0, 0, self.view.frame.width, 60)
+        headerView.backgroundColor =  Color(hexString: "#228B22")
+        self.tableView.tableHeaderView = headerView
+        
+
         
     }
 
@@ -43,7 +50,16 @@ class MyOrderInfoTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 10
     }
+    
+    override init(style: UITableViewStyle) {
+      super.init(style: UITableViewStyle.Grouped)
+        
+    }
 
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> MyOrderInfoTableViewCell {
         
