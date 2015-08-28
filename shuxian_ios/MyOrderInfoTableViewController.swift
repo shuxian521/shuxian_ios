@@ -15,18 +15,11 @@ import SwiftColor
 class MyOrderInfoTableViewController: UITableViewController {
 
     @IBOutlet var headerView: UIView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         self.title = "订单详情"
-        
-//        self.navigationController?.navigationBar.titleTextAttributes = setTitleDic
-        
-//        UINavigationBar.appearance().titleTextAttributes =
-//            NSForegroundColorAttributeName:UIColor.whiteColor(), NSFontAttributeName:UIFont(name:
-//                "AvenirNextCondensed-DemiBold", size: 22.0)
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,7 +28,6 @@ class MyOrderInfoTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
@@ -43,32 +35,26 @@ class MyOrderInfoTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
-    }
-    
-    override init(style: UITableViewStyle) {
-      super.init(style: UITableViewStyle.Grouped)
-        
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        return 6
     }
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> MyOrderInfoTableViewCell {
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("myOrderInfoCell", forIndexPath: indexPath) as! MyOrderInfoTableViewCell
         
+//        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
+
         
-        print(indexPath.row)
+//        print(indexPath.row)
         
         if indexPath.row == 0{
             cell.phoneTextLabel!.text = "手机号："
             cell.phoneNumLabel.text = "18626893929"
             cell.phoneTextLabel.hidden = false
             cell.phoneNumLabel.hidden = false
-        } else if indexPath.row == 9{
+        } else if indexPath.row == 5{
             //显示总计
             
             cell.totalTextLabel!.text = "总计："
@@ -93,7 +79,8 @@ class MyOrderInfoTableViewController: UITableViewController {
             cell.amountLabel.text = "2份"
             cell.amountLabel.hidden = false
         }
-        
+        cell.contentView.frame = cell.bounds
+
         
         return cell
   

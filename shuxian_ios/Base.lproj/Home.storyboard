@@ -176,4 +176,5 @@
         <image name="20150424070327960" width="53" height="14"/>
         <image name="home" width="32" height="32"/>
     </resources>
+    <color key="tintColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
 </document>

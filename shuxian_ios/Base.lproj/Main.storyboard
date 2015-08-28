@@ -33,6 +33,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.2666666667" green="0.56078431370000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="wed-xL-Sy9" kind="relationship" relationship="viewControllers" id="jIS-KQ-ymc"/>

@@ -51,6 +51,7 @@ class MyOrderTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("orderCell", forIndexPath: indexPath)
 
         // Configure the cell...
+        cell.contentView.frame = cell.bounds
 
         return cell
     }

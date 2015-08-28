@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2RT-jt-cAe">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--设置-->
+        <scene sceneID="FJ2-c8-ODh">
+            <objects>
+                <tableViewController id="2RT-jt-cAe" customClass="SettingTableViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="qcO-pg-Nhk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="JJN-kV-H7g">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="mdK-1b-BbI">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mdK-1b-BbI" id="IlA-vQ-GWv">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="price_tag_euro" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5p-1g-21W">
+                                                    <rect key="frame" x="15" y="10" width="25" height="25"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的支付方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmv-8M-46A">
+                                                    <rect key="frame" x="54" y="12" width="91" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付宝支付" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Aj-zL-hW9">
+                                                    <rect key="frame" x="216" y="12" width="71" height="21"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="71" id="gu2-1g-XdV"/>
+                                                        <constraint firstAttribute="height" constant="21" id="oav-DA-aI6"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="4Aj-zL-hW9" secondAttribute="trailing" id="p1u-cl-wSD"/>
+                                                <constraint firstItem="4Aj-zL-hW9" firstAttribute="top" secondItem="IlA-vQ-GWv" secondAttribute="top" constant="12" id="pmv-Ia-P2Q"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Aj-zL-hW9" secondAttribute="bottom" constant="10.5" id="sxR-cQ-Tvp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="JpR-k5-Ty1" kind="push" id="EMJ-vT-Ted"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="5BY-7F-CRI">
+                                        <rect key="frame" x="0.0" y="143" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5BY-7F-CRI" id="0pI-dY-LRk">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="清空缓存" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8K-8C-vvM">
+                                                    <rect key="frame" x="55" y="12" width="91" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.90M" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34m-2A-Fxy">
+                                                    <rect key="frame" x="237" y="12" width="50" height="21"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Erk-CT-lPM"/>
+                                                        <constraint firstAttribute="width" constant="50" id="mSN-Dj-DfR"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="road_worker" translatesAutoresizingMaskIntoConstraints="NO" id="XD1-bB-STM">
+                                                    <rect key="frame" x="16" y="10" width="25" height="24"/>
+                                                    <animations/>
+                                                </imageView>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="34m-2A-Fxy" firstAttribute="top" secondItem="0pI-dY-LRk" secondAttribute="top" constant="12" id="B2T-Tc-VHu"/>
+                                                <constraint firstAttribute="trailing" secondItem="34m-2A-Fxy" secondAttribute="trailing" id="DhX-4X-56G"/>
+                                                <constraint firstAttribute="bottom" secondItem="34m-2A-Fxy" secondAttribute="bottom" constant="10.5" id="Hqi-fC-D8N"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="TL5-7o-g1U">
+                                        <rect key="frame" x="0.0" y="187" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TL5-7o-g1U" id="oaW-aq-3Zg">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="帮助" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyf-Ig-f5r">
+                                                    <rect key="frame" x="55" y="10" width="91" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="voice_presentation" translatesAutoresizingMaskIntoConstraints="NO" id="2tq-Kc-eFj">
+                                                    <rect key="frame" x="16" y="8" width="25" height="25"/>
+                                                    <animations/>
+                                                </imageView>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="vW5-C3-bV9">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" editingAccessoryType="disclosureIndicator" id="jXc-5k-6Q3">
+                                        <rect key="frame" x="0.0" y="267" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jXc-5k-6Q3" id="AL9-nM-yJb">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="PET-V1-tJd">
+                                                    <rect key="frame" x="16" y="10" width="25" height="25"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="关于" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtL-e7-tHQ">
+                                                    <rect key="frame" x="55" y="12" width="91" height="21"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="HYS-Sy-zCJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="HMn-at-tgd">
+                                        <rect key="frame" x="0.0" y="347" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HMn-at-tgd" id="PfY-V9-Uam">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="2RT-jt-cAe" id="lXJ-FH-yio"/>
+                            <outlet property="delegate" destination="2RT-jt-cAe" id="VNX-pD-Z7i"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="设置" id="lPR-Ov-jA1"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO">
+                        <color key="tintColor" red="0.2666666667" green="0.56078431370000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                    </simulatedNavigationBarMetrics>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pay" destination="4Aj-zL-hW9" id="sTN-h2-Qdz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Juk-rF-yEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="-69"/>
+        </scene>
+        <!--Pay Table View Controller-->
+        <scene sceneID="h1T-VW-Ho1">
+            <objects>
+                <tableViewController id="JpR-k5-Ty1" customClass="PayTableViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="DeQ-3G-zYj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="选择支付方式" id="T3L-Tj-q1k">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="44" id="nUG-27-92d">
+                                        <rect key="frame" x="0.0" y="113.5" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nUG-27-92d" id="ueF-9Q-1w3">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weixinpay" translatesAutoresizingMaskIntoConstraints="NO" id="22d-Hs-sxL">
+                                                    <rect key="frame" x="45" y="1" width="102" height="41.5"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ok" translatesAutoresizingMaskIntoConstraints="NO" id="vsh-Ft-OGu">
+                                                    <rect key="frame" x="13" y="10" width="25" height="25"/>
+                                                    <animations/>
+                                                </imageView>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="44" id="eX1-D2-gwt">
+                                        <rect key="frame" x="0.0" y="157.5" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eX1-D2-gwt" id="vua-mo-H4i">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alipay" translatesAutoresizingMaskIntoConstraints="NO" id="G2X-2D-949">
+                                                    <rect key="frame" x="47" y="1" width="102" height="41.5"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ok" translatesAutoresizingMaskIntoConstraints="NO" id="zIH-vj-rcl">
+                                                    <rect key="frame" x="14" y="9" width="25" height="25"/>
+                                                    <animations/>
+                                                </imageView>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="JpR-k5-Ty1" id="PyA-TS-z1U"/>
+                            <outlet property="delegate" destination="JpR-k5-Ty1" id="vjy-hC-YEu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="UPj-0c-8ZM"/>
+                    <connections>
+                        <outlet property="aliPayOKImage" destination="zIH-vj-rcl" id="xlW-cG-nMf"/>
+                        <outlet property="weixinPayOKImage" destination="vsh-Ft-OGu" id="cnp-Au-oPv"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbC-0h-R6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="931" y="-69"/>
+        </scene>
+        <!--设置-->
+        <scene sceneID="wXI-ra-9WO">
+            <objects>
+                <tableViewController id="phE-Om-oF2" customClass="SettingTableViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="2Ot-da-d8H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="bLw-yi-2rB">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="YSn-T0-b5b">
+                                        <rect key="frame" x="0.0" y="99" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YSn-T0-b5b" id="wP2-3o-0mh">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的支付方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgV-gN-XVh">
+                                                    <rect key="frame" x="54" y="12" width="91" height="21"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="91" id="JlJ-HW-UYs"/>
+                                                        <constraint firstAttribute="height" constant="21" id="gCF-0J-5Vq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付宝支付" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPU-n9-k9a">
+                                                    <rect key="frame" x="216" y="12" width="71" height="21"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="71" id="4A8-TI-VPa"/>
+                                                        <constraint firstAttribute="height" constant="21" id="R1l-bw-DUU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="price_tag_euro" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f1w-JN-GFk">
+                                                    <rect key="frame" x="15" y="10" width="25" height="25"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="alS-ad-4gO"/>
+                                                        <constraint firstAttribute="height" constant="25" id="sFC-G7-rk8"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="f1w-JN-GFk" firstAttribute="leading" secondItem="wP2-3o-0mh" secondAttribute="leading" constant="15" id="1kW-Ns-076"/>
+                                                <constraint firstAttribute="trailing" secondItem="OPU-n9-k9a" secondAttribute="trailing" id="8uc-2J-Yer"/>
+                                                <constraint firstItem="f1w-JN-GFk" firstAttribute="top" secondItem="wP2-3o-0mh" secondAttribute="top" constant="10" id="CLo-R8-UZu"/>
+                                                <constraint firstAttribute="bottom" secondItem="f1w-JN-GFk" secondAttribute="bottom" constant="8.5" id="HhE-NF-jtd"/>
+                                                <constraint firstAttribute="bottom" secondItem="RgV-gN-XVh" secondAttribute="bottom" constant="10.5" id="KnX-bP-jgZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="OPU-n9-k9a" secondAttribute="bottom" constant="10.5" id="TW1-OC-EmZ"/>
+                                                <constraint firstItem="RgV-gN-XVh" firstAttribute="leading" secondItem="f1w-JN-GFk" secondAttribute="trailing" constant="14" id="b5n-Zp-PFA"/>
+                                                <constraint firstItem="RgV-gN-XVh" firstAttribute="top" secondItem="wP2-3o-0mh" secondAttribute="top" constant="12" id="eaE-aY-Zak"/>
+                                                <constraint firstAttribute="trailing" secondItem="RgV-gN-XVh" secondAttribute="trailing" constant="142" id="jRh-fU-KGi"/>
+                                                <constraint firstItem="OPU-n9-k9a" firstAttribute="top" secondItem="wP2-3o-0mh" secondAttribute="top" constant="12" id="xIH-gx-9PA"/>
+                                                <constraint firstItem="OPU-n9-k9a" firstAttribute="leading" secondItem="RgV-gN-XVh" secondAttribute="trailing" constant="71" id="xj9-hJ-E9v"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="zQX-NE-HEV">
+                                        <rect key="frame" x="0.0" y="143" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zQX-NE-HEV" id="xrm-F2-PU7">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="清空缓存" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apr-8n-iBv">
+                                                    <rect key="frame" x="55" y="12" width="91" height="21"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="91" id="1mm-GM-dUp"/>
+                                                        <constraint firstAttribute="height" constant="21" id="Z0h-h1-rVB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.90M" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZC-F1-gyu">
+                                                    <rect key="frame" x="237" y="12" width="50" height="21"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="6ve-kG-JVq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="road_worker" translatesAutoresizingMaskIntoConstraints="NO" id="88c-aw-D2s">
+                                                    <rect key="frame" x="16" y="10" width="25" height="24"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="H5P-KY-eLW"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Apr-8n-iBv" secondAttribute="bottom" constant="10.5" id="0gw-Zp-euV"/>
+                                                <constraint firstItem="3ZC-F1-gyu" firstAttribute="baseline" secondItem="Apr-8n-iBv" secondAttribute="baseline" id="0jO-TH-Ege"/>
+                                                <constraint firstItem="88c-aw-D2s" firstAttribute="leading" secondItem="xrm-F2-PU7" secondAttribute="leading" constant="16" id="6cQ-OH-y95"/>
+                                                <constraint firstItem="3ZC-F1-gyu" firstAttribute="centerY" secondItem="88c-aw-D2s" secondAttribute="centerY" id="Jgc-RB-Y6F"/>
+                                                <constraint firstItem="Apr-8n-iBv" firstAttribute="leading" secondItem="88c-aw-D2s" secondAttribute="trailing" constant="14" id="RfH-2I-KJf"/>
+                                                <constraint firstItem="Apr-8n-iBv" firstAttribute="top" secondItem="xrm-F2-PU7" secondAttribute="top" constant="12" id="XaA-VW-1cV"/>
+                                                <constraint firstItem="3ZC-F1-gyu" firstAttribute="leading" secondItem="Apr-8n-iBv" secondAttribute="trailing" constant="91" id="bfE-n0-jXo"/>
+                                                <constraint firstAttribute="trailing" secondItem="3ZC-F1-gyu" secondAttribute="trailing" id="dSG-qy-gjE"/>
+                                                <constraint firstItem="3ZC-F1-gyu" firstAttribute="firstBaseline" secondItem="Apr-8n-iBv" secondAttribute="firstBaseline" id="tMB-T0-Aun"/>
+                                                <constraint firstItem="88c-aw-D2s" firstAttribute="top" secondItem="xrm-F2-PU7" secondAttribute="top" constant="10" id="x0c-BC-OHt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="eBX-Lk-ph5">
+                                        <rect key="frame" x="0.0" y="187" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eBX-Lk-ph5" id="08h-hm-mDZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帮助" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmR-W5-8Ap">
+                                                    <rect key="frame" x="55" y="10" width="91" height="21"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="91" id="07F-a0-iHA"/>
+                                                        <constraint firstAttribute="height" constant="21" id="jo6-Gf-oxG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voice_presentation" translatesAutoresizingMaskIntoConstraints="NO" id="WQv-ti-iCy">
+                                                    <rect key="frame" x="16" y="8" width="25" height="25"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="fpP-FF-Ryw"/>
+                                                        <constraint firstAttribute="height" constant="25" id="qe6-pS-bWy"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="VmR-W5-8Ap" firstAttribute="top" secondItem="08h-hm-mDZ" secondAttribute="top" constant="10" id="1Sd-EV-R7E"/>
+                                                <constraint firstItem="WQv-ti-iCy" firstAttribute="top" secondItem="08h-hm-mDZ" secondAttribute="top" constant="8" id="557-Cv-b30"/>
+                                                <constraint firstAttribute="bottom" secondItem="WQv-ti-iCy" secondAttribute="bottom" constant="10.5" id="5Jh-1Z-l7z"/>
+                                                <constraint firstAttribute="bottom" secondItem="VmR-W5-8Ap" secondAttribute="bottom" constant="12.5" id="KqC-63-xLt"/>
+                                                <constraint firstItem="WQv-ti-iCy" firstAttribute="leading" secondItem="08h-hm-mDZ" secondAttribute="leading" constant="16" id="WDw-Fu-UbC"/>
+                                                <constraint firstItem="VmR-W5-8Ap" firstAttribute="leading" secondItem="WQv-ti-iCy" secondAttribute="trailing" constant="14" id="lFr-aS-oMo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="aYb-Ox-pQb">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" editingAccessoryType="disclosureIndicator" id="7Du-WW-dh0">
+                                        <rect key="frame" x="0.0" y="267" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Du-WW-dh0" id="fG4-rV-0uL">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvz-e9-Im0">
+                                                    <rect key="frame" x="55" y="12" width="91" height="21"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="91" id="17h-tv-mmq"/>
+                                                        <constraint firstAttribute="height" constant="21" id="A4x-28-PAz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="O2S-4G-eyo">
+                                                    <rect key="frame" x="16" y="10" width="25" height="25"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="TFx-pr-LRA"/>
+                                                        <constraint firstAttribute="width" constant="25" id="fQ7-a7-ZEj"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="O2S-4G-eyo" secondAttribute="bottom" constant="8.5" id="2aG-cs-Wnb"/>
+                                                <constraint firstItem="uvz-e9-Im0" firstAttribute="leading" secondItem="O2S-4G-eyo" secondAttribute="trailing" constant="14" id="S9f-jY-yHI"/>
+                                                <constraint firstAttribute="bottom" secondItem="uvz-e9-Im0" secondAttribute="bottom" constant="10.5" id="b4W-hy-jFM"/>
+                                                <constraint firstItem="uvz-e9-Im0" firstAttribute="top" secondItem="fG4-rV-0uL" secondAttribute="top" constant="12" id="oJv-Qg-Asb"/>
+                                                <constraint firstItem="O2S-4G-eyo" firstAttribute="top" secondItem="fG4-rV-0uL" secondAttribute="top" constant="10" id="oTc-gq-HkH"/>
+                                                <constraint firstItem="O2S-4G-eyo" firstAttribute="leading" secondItem="fG4-rV-0uL" secondAttribute="leading" constant="16" id="oX2-4n-g5q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="ZPB-cP-cnC">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="O3x-vi-q2T">
+                                        <rect key="frame" x="0.0" y="347" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O3x-vi-q2T" id="INT-4w-GpK">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="phE-Om-oF2" id="wS8-DZ-Huk"/>
+                            <outlet property="delegate" destination="phE-Om-oF2" id="zca-vh-KKj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="设置" id="wYK-78-ldo"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO">
+                        <color key="tintColor" red="0.2666666667" green="0.56078431370000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </simulatedNavigationBarMetrics>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="pay" destination="OPU-n9-k9a" id="dwJ-UR-ZyP"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFH-AE-78b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="511"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alipay" width="170" height="66"/>
+        <image name="logo" width="341" height="341"/>
+        <image name="ok" width="22" height="22"/>
+        <image name="price_tag_euro" width="33" height="33"/>
+        <image name="road_worker" width="32" height="32"/>
+        <image name="voice_presentation" width="32" height="32"/>
+        <image name="weixinpay" width="132" height="54"/>
+    </resources>
+    <color key="tintColor" red="0.2666666667" green="0.56078431370000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+</document>

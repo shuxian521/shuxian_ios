@@ -26,7 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        if let barFont = UIFont(name: "AvenirNextCondensed-DemiBold", size: 18.0) {
 //            UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:Color(hexString: "#228B22"), NSFontAttributeName:barFont]
 //        }
-// 
+        
+        
+        //设置TabBar 选中背景色
+        UITabBar.appearance().tintColor = Color(hexString: "#228B22")
         
         return true
     }
