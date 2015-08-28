@@ -47,6 +47,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="west_direction" width="31" height="31"/>
+        <image name="west_direction" width="28" height="28"/>
     </resources>
 </document>

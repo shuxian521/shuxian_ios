@@ -1,50 +1,48 @@
 //
-//  MyViewController.swift
+//  SettingTableViewController.swift
 //  shuxian_ios
 //
-//  Created by SongLijun on 15/8/19.
+//  Created by SongLijun on 15/8/28.
 //  Copyright © 2015年 itjh. All rights reserved.
 //
 
+/**
+    设置Table
+*/
+
 import UIKit
-import SwiftColor
 
-
-class MyViewController: UITableViewController {
-
+class SettingTableViewController: UITableViewController {
     
+    var selectPay:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+
+    @IBOutlet weak var pay: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        //添加tableHeaderView
-        let headerView: ParallaxHeaderView = ParallaxHeaderView.parallaxHeaderViewWithImage(UIImage(named: "mytop"), forSize: CGSizeMake(self.tableView.frame.size.width, 200)) as! ParallaxHeaderView
-        self.tableView.tableHeaderView = headerView
-        
-        //设置UINavigationBar title颜色，字体
-        self.navigationController?.navigationBar.barTintColor = Color(hexString:"#FEFEFE")
-        if let barFont = UIFont(name: "AvenirNextCondensed-DemiBold", size: 18.0) {
-            self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:Color(hexString: "#228B22"), NSFontAttributeName:barFont]
-        }
+       
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-      
-        //添加tableHeaderView
-        let header: ParallaxHeaderView = self.tableView.tableHeaderView as! ParallaxHeaderView
-        header.refreshBlurViewForNewImage()
-        self.tableView.tableHeaderView = header
-    }
-    
-    
-    
-    //MARK: 滑动操作
-    override func  scrollViewDidScroll(scrollView: UIScrollView) {
-        if (scrollView == self.tableView){
-            let header: ParallaxHeaderView = self.tableView.tableHeaderView as! ParallaxHeaderView
-            header.layoutHeaderViewForScrollViewOffset(scrollView.contentOffset)
-            self.tableView.tableHeaderView = header
-        }
+    override func viewWillAppear(animated: Bool) {
+        
+        //显示支付方式
+        if selectPay.valueForKey("pay") != nil{
+            pay.hidden = false
+            if  (selectPay.valueForKey("pay") as! Int) == 0 {
+                pay.text = "微信支付"
+            }else {
+                pay.text = "支付宝支付"
+            }
+        }else{
+            pay.text = "支付宝支付"
+        } 
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,25 +52,44 @@ class MyViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-//
-//    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // #warning Incomplete implementation, return the number of rows
-//        return 0
-//    }
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 3
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        
+        switch section {
+        case 0:
+            return 3
+        case 1:
+            return 1
+        default:
+            return 1
+            
+        }
+    }
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        
+//        UITableViewCell *cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+        
+        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
+
+        
+        
+//        let cell = tableView.dequeueReusableCellWithIdentifier(nil, forIndexPath: indexPath)
+        
+        if indexPath.section == 0{
+            cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        }
 
         // Configure the cell...
 
         return cell
-    }
-    */
+    }*/
 
     /*
     // Override to support conditional editing of the table view.
