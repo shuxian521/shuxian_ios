@@ -34,6 +34,15 @@ class MyViewController: UITableViewController {
         let header: ParallaxHeaderView = self.tableView.tableHeaderView as! ParallaxHeaderView
         header.refreshBlurViewForNewImage()
         self.tableView.tableHeaderView = header
+        
+
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        self.tabBarController?.tabBar.hidden = false
+
     }
     
     
