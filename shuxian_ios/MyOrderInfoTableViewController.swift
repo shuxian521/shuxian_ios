@@ -21,6 +21,12 @@ class MyOrderInfoTableViewController: UITableViewController {
         super.viewDidLoad()
         self.title = "订单详情"
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        self.tabBarController?.tabBar.hidden = true
+
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

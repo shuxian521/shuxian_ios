@@ -28,6 +28,13 @@ class MyOrderTableViewController: UITableViewController {
         
 //          
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        //设置tabBar 是否显示
+        self.tabBarController?.tabBar.hidden = true
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -43,7 +50,7 @@ class MyOrderTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 20
+        return 21
     }
 
     

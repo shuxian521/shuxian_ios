@@ -42,8 +42,13 @@ class SettingTableViewController: UITableViewController {
             }
         }else{
             pay.text = "支付宝支付"
-        } 
+        }
+        
+        self.tabBarController?.tabBar.hidden = true
+
     }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

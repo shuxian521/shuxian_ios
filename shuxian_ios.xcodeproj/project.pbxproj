@@ -30,6 +30,8 @@
 		AB8CA8831B84386300E30C13 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CA8821B84386300E30C13 /* LoginViewController.swift */; };
 		AB8CA8861B84387000E30C13 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8CA8841B84387000E30C13 /* Login.storyboard */; };
 		ABB69A751B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		ABCA584F1B904993002313CD /* MyOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCA584E1B904993002313CD /* MyOrder.storyboard */; settings = {ASSET_TAGS = (); }; };
+		ABCA58511B9049B2002313CD /* MySetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCA58501B9049B2002313CD /* MySetting.storyboard */; settings = {ASSET_TAGS = (); }; };
 		ABE271921B857BAF007E6366 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2718F1B857BAF007E6366 /* UIImage+ImageEffects.m */; };
 		ABE271931B857BAF007E6366 /* ParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE271911B857BAF007E6366 /* ParallaxHeaderView.m */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		AB8CA8851B84387000E30C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		ABB1A0591B8483C30055D06A /* shuxian_ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shuxian_ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrderInfoTableViewCell.swift; sourceTree = "<group>"; };
+		ABCA584E1B904993002313CD /* MyOrder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyOrder.storyboard; sourceTree = "<group>"; };
+		ABCA58501B9049B2002313CD /* MySetting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MySetting.storyboard; sourceTree = "<group>"; };
 		ABE2718E1B857BAF007E6366 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		ABE2718F1B857BAF007E6366 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		ABE271901B857BAF007E6366 /* ParallaxHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxHeaderView.h; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 				AB327F651B8318AE00FA7EA1 /* Main.storyboard */,
 				AB7CDE631B85C8C40075344D /* Home.storyboard */,
 				AB6157AE1B847A60007774B7 /* My.storyboard */,
+				ABCA58501B9049B2002313CD /* MySetting.storyboard */,
+				ABCA584E1B904993002313CD /* MyOrder.storyboard */,
 				AB8CA8841B84387000E30C13 /* Login.storyboard */,
 				AB8CA87A1B8420B600E30C13 /* Buy.storyboard */,
 				AB327F7A1B8320D200FA7EA1 /* Find.storyboard */,
@@ -266,7 +272,9 @@
 				AB8CA8861B84387000E30C13 /* Login.storyboard in Resources */,
 				AB327F6F1B8318AE00FA7EA1 /* LaunchScreen.storyboard in Resources */,
 				AB327F6C1B8318AE00FA7EA1 /* Assets.xcassets in Resources */,
+				ABCA58511B9049B2002313CD /* MySetting.storyboard in Resources */,
 				AB6157AF1B847A60007774B7 /* My.storyboard in Resources */,
+				ABCA584F1B904993002313CD /* MyOrder.storyboard in Resources */,
 				AB327F671B8318AE00FA7EA1 /* Main.storyboard in Resources */,
 				AB8CA87C1B8420B600E30C13 /* Buy.storyboard in Resources */,
 				AB327F7C1B8320D200FA7EA1 /* Find.storyboard in Resources */,

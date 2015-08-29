@@ -33,6 +33,14 @@ class PayTableViewController: UITableViewController {
             self.aliPayOKImage.hidden = true
         }
     }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        self.tabBarController?.tabBar.hidden = true
+        
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
