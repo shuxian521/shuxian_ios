@@ -33,6 +33,7 @@ class MyOrderTableViewController: UITableViewController {
         
         //设置tabBar 是否显示
         self.tabBarController?.tabBar.hidden = true
+
         
     }
 

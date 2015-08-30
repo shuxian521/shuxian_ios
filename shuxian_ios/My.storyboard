@@ -14,7 +14,7 @@
         <!--我的-->
         <scene sceneID="382-Tj-DuV">
             <objects>
-                <tableViewController id="sKH-p4-R6i" customClass="MyViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController hidesBottomBarWhenPushed="YES" id="sKH-p4-R6i" customClass="MyViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="mS1-f6-D5X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
-                                            <segue destination="zHc-d7-np3" kind="push" id="VE8-fd-vqD"/>
+                                            <segue destination="zHc-d7-np3" kind="push" identifier="toMyOrder" id="VE8-fd-vqD"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="ake-KZ-AkS">
