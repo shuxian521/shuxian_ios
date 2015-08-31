@@ -17,9 +17,10 @@ class MyOrderInfoTableViewController: UITableViewController {
     @IBOutlet var headerView: UIView!
 
     
+    @IBOutlet var footerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "订单详情"
+        self.title = "订单详情"  
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -107,14 +108,22 @@ class MyOrderInfoTableViewController: UITableViewController {
 
     }
     
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        
+        return 200
+    }
+    
     //添加HeaderView
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-//        let headerView = UIView()
-//        headerView.frame = CGRectMake(0, 0, self.view.frame.width, 60)
-//        headerView.backgroundColor =  Color(hexString: "#228B22")
-//        
         return headerView
+    }
+    
+   //添加Footer
+   override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        
+        return footerView
+
+        
     }
 
     /*

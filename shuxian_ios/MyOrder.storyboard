@@ -161,7 +161,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A6AA5EAB-567F-4591-B762-CFF76C24A58B" translatesAutoresizingMaskIntoConstraints="NO" id="THV-I5-JUB">
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3A175E38-4CC9-48EE-A00B-998E3E0CF07B" translatesAutoresizingMaskIntoConstraints="NO" id="THV-I5-JUB">
                                             <rect key="frame" x="180" y="12" width="54" height="15"/>
                                             <animations/>
                                             <constraints>
@@ -254,10 +254,52 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="订单详情" id="b92-Ie-mCj"/>
                     <connections>
+                        <outlet property="footerView" destination="G0J-up-ck3" id="h24-yi-Y5M"/>
                         <outlet property="headerView" destination="TGO-Nd-pGs" id="ahj-RV-2jZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uO-i2-x5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="G0J-up-ck3">
+                    <rect key="frame" x="0.0" y="0.0" width="385" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITI-gO-96Q">
+                            <rect key="frame" x="22" y="8" width="70" height="25"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="5QF-p8-0C4"/>
+                                <constraint firstAttribute="height" constant="25" id="s38-oC-81d"/>
+                            </constraints>
+                            <state key="normal" title="联系店面"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="提示：                                     支付成功次日11:00－17:00 凭提菜码和手机号提货" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYe-Ec-juh">
+                            <rect key="frame" x="22" y="41" width="321" height="76"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                            <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4k-E7-VUn">
+                            <rect key="frame" x="297" y="8" width="64" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="ThE-0s-Tml"/>
+                                <constraint firstAttribute="height" constant="30" id="bIW-uA-Y5Y"/>
+                            </constraints>
+                            <state key="normal" title="联系客服"/>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="V4k-E7-VUn" firstAttribute="top" secondItem="G0J-up-ck3" secondAttribute="top" constant="8" id="Doa-bc-jCM"/>
+                        <constraint firstItem="ITI-gO-96Q" firstAttribute="top" secondItem="G0J-up-ck3" secondAttribute="top" constant="8" id="Pih-Dh-Yoa"/>
+                        <constraint firstItem="ITI-gO-96Q" firstAttribute="leading" secondItem="G0J-up-ck3" secondAttribute="leading" constant="22" id="Q73-oO-hXd"/>
+                        <constraint firstAttribute="trailing" secondItem="V4k-E7-VUn" secondAttribute="trailing" constant="24" id="jUe-CO-mUq"/>
+                        <constraint firstItem="PYe-Ec-juh" firstAttribute="top" secondItem="ITI-gO-96Q" secondAttribute="bottom" constant="8" id="mQh-vm-rqw"/>
+                        <constraint firstItem="PYe-Ec-juh" firstAttribute="top" secondItem="V4k-E7-VUn" secondAttribute="bottom" constant="3" id="sK7-dN-Ei4"/>
+                    </constraints>
+                </view>
                 <view contentMode="scaleToFill" id="TGO-Nd-pGs">
                     <rect key="frame" x="0.0" y="0.0" width="377" height="50"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -423,7 +465,7 @@
                                             <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="D8E532E7-0B65-4CCF-AE43-953F69EE6B18" translatesAutoresizingMaskIntoConstraints="NO" id="Ehp-Bc-VZg">
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="70BD6287-ED66-4BDF-B94C-21E4ACDDAD97" translatesAutoresizingMaskIntoConstraints="NO" id="Ehp-Bc-VZg">
                                             <rect key="frame" x="180" y="12" width="54" height="15"/>
                                             <animations/>
                                             <constraints>
@@ -627,7 +669,7 @@
                                             <color key="textColor" red="0.2666666667" green="0.56078431370000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EE373A00-B975-4D35-B127-5E43A5C5D7D2" translatesAutoresizingMaskIntoConstraints="NO" id="UXR-8h-1pk">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="F95E7054-008F-4A45-9ECC-39434BBCF46D" translatesAutoresizingMaskIntoConstraints="NO" id="UXR-8h-1pk">
                                             <rect key="frame" x="178" y="11" width="54" height="15"/>
                                             <animations/>
                                         </imageView>
@@ -753,7 +795,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="A6AA5EAB-567F-4591-B762-CFF76C24A58B" width="53" height="14">
+        <image name="3A175E38-4CC9-48EE-A00B-998E3E0CF07B" width="53" height="14">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -854,7 +896,7 @@ FX8VgxWKFZIVnxWkFaYVqBWtFbUVuBW9FcUVyBXaFd0V4gAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAA
 AAAAABXkA
 </mutableData>
         </image>
-        <image name="D8E532E7-0B65-4CCF-AE43-953F69EE6B18" width="53" height="14">
+        <image name="70BD6287-ED66-4BDF-B94C-21E4ACDDAD97" width="53" height="14">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -955,7 +997,7 @@ FX8VgxWKFZIVnxWkFaYVqBWtFbUVuBW9FcUVyBXaFd0V4gAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAA
 AAAAABXkA
 </mutableData>
         </image>
-        <image name="EE373A00-B975-4D35-B127-5E43A5C5D7D2" width="53" height="14">
+        <image name="F95E7054-008F-4A45-9ECC-39434BBCF46D" width="53" height="14">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

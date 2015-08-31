@@ -24,8 +24,9 @@ class MyOrderTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         self.navigationController?.navigationBar.tintColor = Color(hexString: "#228B22")
-        
-        
+        //tableview数据为空时 cell问题
+        self.tableView.tableFooterView=UIView()
+
 //          
     }
     
