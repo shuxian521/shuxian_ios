@@ -107,24 +107,24 @@ class MyOrderInfoTableViewController: UITableViewController {
         return 50
 
     }
-    
-    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        
-        return 200
-    }
+//    
+//    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+//        
+//        return 200
+//    }
     
     //添加HeaderView
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return headerView
     }
     
-   //添加Footer
-   override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        
-        return footerView
-
-        
-    }
+//   //添加Footer
+//   override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//        
+//        return footerView
+//
+//        
+//    }
 
     /*
     // Override to support conditional editing of the table view.

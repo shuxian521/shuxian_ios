@@ -38,7 +38,7 @@
                     <connections>
                         <segue destination="wed-xL-Sy9" kind="relationship" relationship="viewControllers" id="jIS-KQ-ymc"/>
                         <segue destination="bgN-xk-y7Z" kind="relationship" relationship="viewControllers" id="I58-0o-cCl"/>
-                        <segue destination="MRH-1w-ov8" kind="relationship" relationship="viewControllers" id="OzO-ec-3u2"/>
+                        <segue destination="eCk-N5-DLP" kind="relationship" relationship="viewControllers" id="jEm-gQ-gCG"/>
                         <segue destination="cUB-ae-JYJ" kind="relationship" relationship="viewControllers" id="b0L-nx-10P"/>
                     </connections>
                 </tabBarController>
@@ -55,16 +55,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QL7-AE-c0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-281" y="-115"/>
-        </scene>
-        <!--Buy-->
-        <scene sceneID="xbg-sY-rqR">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Buy" id="MRH-1w-ov8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Oy3-f1-kuh"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="clr-aj-IA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-282" y="-39"/>
         </scene>
         <!--My-->
         <scene sceneID="IpQ-J3-egT">
@@ -85,6 +75,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="An4-ZE-Px6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-276" y="33"/>
+        </scene>
+        <!--Buy-->
+        <scene sceneID="DDn-QG-KcA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Buy" id="eCk-N5-DLP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="INk-Hq-kVC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qpp-9c-QuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-232" y="514"/>
         </scene>
     </scenes>
 </document>

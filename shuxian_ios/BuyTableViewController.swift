@@ -1,51 +1,27 @@
 //
-//  MyViewController.swift
+//  BuyTableViewController.swift
 //  shuxian_ios
 //
-//  Created by SongLijun on 15/8/19.
+//  Created by SongLijun on 15/8/31.
 //  Copyright © 2015年 itjh. All rights reserved.
 //
 
+/**
+    购物车
+*/
 import UIKit
 import SwiftColor
 
+class BuyTableViewController: UITableViewController {
 
-class MyViewController: UITableViewController {
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //添加tableHeaderView
-        let headerView: ParallaxHeaderView = ParallaxHeaderView.parallaxHeaderViewWithImage(UIImage(named: "mytop"), forSize: CGSizeMake(self.tableView.frame.size.width, 200)) as! ParallaxHeaderView
-        self.tableView.tableHeaderView = headerView
-        
         //设置UINavigationBar title颜色，字体
         self.navigationController?.navigationBar.barTintColor = Color(hexString:"#FEFEFE")
         if let barFont = UIFont(name: "AvenirNextCondensed-DemiBold", size: 18.0) {
             self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:Color(hexString: "#228B22"), NSFontAttributeName:barFont]
         }
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-      
-        //添加tableHeaderView
-        let header: ParallaxHeaderView = self.tableView.tableHeaderView as! ParallaxHeaderView
-        header.refreshBlurViewForNewImage()
-        self.tableView.tableHeaderView = header
-        
-
-        
-    }
  
-    //MARK: 滑动操作
-    override func  scrollViewDidScroll(scrollView: UIScrollView) {
-        if (scrollView == self.tableView){
-            let header: ParallaxHeaderView = self.tableView.tableHeaderView as! ParallaxHeaderView
-            header.layoutHeaderViewForScrollViewOffset(scrollView.contentOffset)
-            self.tableView.tableHeaderView = header
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,25 +31,25 @@ class MyViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-//
-//    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // #warning Incomplete implementation, return the number of rows
-//        return 0
-//    }
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
 
-    /*
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 10
+    }
+
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("buyCell", forIndexPath: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -110,19 +86,14 @@ class MyViewController: UITableViewController {
     }
     */
 
-   
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        
-        if segue.identifier == "toMyOrder" {
-            print("点击了我的订单")
-           
-        }
     }
-
+    */
 
 }
