@@ -52,6 +52,10 @@ class BuyTableViewController: UITableViewController {
         return cell
     }
     
+    @IBAction func close(segue:UIStoryboardSegue) {
+        
+    }
+    
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 25
     }
