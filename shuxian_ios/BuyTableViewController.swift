@@ -12,6 +12,7 @@
 import UIKit
 import SwiftColor
 
+
 class BuyTableViewController: UITableViewController {
     @IBOutlet var footerView: UIView!
 
@@ -44,12 +45,91 @@ class BuyTableViewController: UITableViewController {
     }
 
     
+//    - (BKTPopinTransitionStyle)transitionStyleForIndexPath:(NSIndexPath *)indexPath
+//    {
+//    if (indexPath.section == 0) {
+//    return indexPath.row;
+//    }
+//    return 0;
+//    }
+    
+    func transitionStyleForIndexPath(indexPath: NSIndexPath) -> Int {
+        
+        return 2
+    }
+   
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("buyCell", forIndexPath: indexPath)
 
         // Configure the cell...
-
+ 
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
+        let popin = BuyInfoViewController()
+        popin.commodityImageView.image = UIImage(named: "20150820021222293")
+        //设置view样式
+        popin.setPopinTransitionStyle(.CrossDissolve)
+        
+        
+        let blurParameters = self.blurParameters()
+        
+        
+        popin.setPopinOptions(.DisableAutoDismiss )
+        
+        
+        //设置弹出样式为 中间浮出
+        popin.setPopinAlignment(.Centered)
+        
+        blurParameters.alpha = 1.0
+        blurParameters.radius = 8.0
+        blurParameters.saturationDeltaFactor = 1.8
+        blurParameters.tintColor = Color.white.alpha(0.3)
+        popin.setBlurParameters(blurParameters)
+        //
+        
+//        [popin setPopinOptions:[popin popinOptions]|BKTPopinBlurryDimmingView];
+
+        popin.setPopinOptions(.BlurryDimmingView)
+        //
+        
+        
+//        //Define a custom transition style
+//        
+        if popin.popinTransitionStyle() == .Custom{
+            
+            popin.setPopinCustomInAnimation({ (popinController, initialFrame, finalFrame) -> Void in
+                
+                popinController.view.frame = finalFrame;
+                                popinController.view.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4 / 2));
+            })
+            
+            popin.setPopinCustomOutAnimation { (popinController, initialFrame, finalFrame) -> Void in
+                
+                popinController.view.frame = finalFrame
+                popinController.view.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_2))
+                
+            }
+            
+        }
+        
+        
+        
+        popin.setPreferedPopinContentSize(CGSizeMake(280.0, 240.0))
+    
+        popin.setPopinTransitionDirection(.Top)
+        
+        self.navigationController?.presentPopinController(popin, animated: true, completion: { () -> Void in
+            
+            
+            
+            print("弹窗")
+        })
+        
     }
     
     @IBAction func close(segue:UIStoryboardSegue) {

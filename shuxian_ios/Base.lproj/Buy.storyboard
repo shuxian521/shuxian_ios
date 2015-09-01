@@ -15,7 +15,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="buyCell" rowHeight="80" id="gJJ-LJ-EoL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="buyCell" rowHeight="80" id="gJJ-LJ-EoL">
                                 <rect key="frame" x="0.0" y="92" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gJJ-LJ-EoL" id="CqE-yf-VMP">
@@ -99,9 +99,6 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <animations/>
-                                <connections>
-                                    <segue destination="IS7-xq-f8e" kind="modal" id="9tc-Fg-ht9"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -182,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="144" y="514"/>
         </scene>
-        <!--View Controller-->
+        <!--Buy Info View Controller-->
         <scene sceneID="lOa-W7-bXJ">
             <objects>
-                <viewController id="IS7-xq-f8e" sceneMemberID="viewController">
+                <viewController id="IS7-xq-f8e" customClass="BuyInfoViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ak5-RZ-agO"/>
                         <viewControllerLayoutGuide type="bottom" id="IbA-z7-kWx"/>
@@ -208,13 +205,16 @@
                             </button>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="commodityImageView" destination="QZ4-CQ-t88" id="PaK-Kt-EPc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49z-W3-idi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gBF-0b-jKs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="572" y="514"/>
+            <point key="canvasLocation" x="519" y="514"/>
         </scene>
         <!--购物车-->
         <scene sceneID="4ke-LV-9hI">
