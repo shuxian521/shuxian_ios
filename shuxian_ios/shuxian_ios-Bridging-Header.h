@@ -10,5 +10,7 @@
 
 #import "AdView.h"
 
+#import <MaryPopin/UIViewController+MaryPopin.h>
+
 
 

@@ -3,6 +3,8 @@ pod 'SwiftColor'
 
 pod 'SDWebImage', '~>3.7'
 
+pod 'MaryPopin'
+
 
 
 

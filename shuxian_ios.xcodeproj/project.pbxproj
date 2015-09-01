@@ -19,6 +19,7 @@
 		AB327F6C1B8318AE00FA7EA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB327F6B1B8318AE00FA7EA1 /* Assets.xcassets */; };
 		AB327F6F1B8318AE00FA7EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB327F6D1B8318AE00FA7EA1 /* LaunchScreen.storyboard */; };
 		AB327F7C1B8320D200FA7EA1 /* Find.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB327F7A1B8320D200FA7EA1 /* Find.storyboard */; };
+		AB46D3E61B9587AA00D5E0CC /* BuyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46D3E51B9587AA00D5E0CC /* BuyInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AB6157AF1B847A60007774B7 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6157AE1B847A60007774B7 /* My.storyboard */; };
 		AB6157B11B847EDC007774B7 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6157B01B847EDC007774B7 /* MyViewController.swift */; };
 		AB65399A1B90127700BDAB39 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6539991B90127700BDAB39 /* SettingTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -26,9 +27,10 @@
 		AB7CDE601B85C25A0075344D /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CDE5F1B85C25A0075344D /* HomeCollectionViewController.swift */; };
 		AB7CDE621B85C29D0075344D /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7CDE611B85C29D0075344D /* HomeCollectionViewCell.swift */; };
 		AB7CDE651B85C8C40075344D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7CDE631B85C8C40075344D /* Home.storyboard */; };
-		AB8CA87C1B8420B600E30C13 /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8CA87A1B8420B600E30C13 /* Buy.storyboard */; };
 		AB8CA8831B84386300E30C13 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8CA8821B84386300E30C13 /* LoginViewController.swift */; };
 		AB8CA8861B84387000E30C13 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8CA8841B84387000E30C13 /* Login.storyboard */; };
+		AB8E513A1B9451BE009A3BE4 /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E51391B9451BE009A3BE4 /* BuyTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AB8E513D1B94532C009A3BE4 /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8E513B1B94532C009A3BE4 /* Buy.storyboard */; settings = {ASSET_TAGS = (); }; };
 		ABB69A751B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		ABCA584F1B904993002313CD /* MyOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCA584E1B904993002313CD /* MyOrder.storyboard */; settings = {ASSET_TAGS = (); }; };
 		ABCA58511B9049B2002313CD /* MySetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCA58501B9049B2002313CD /* MySetting.storyboard */; settings = {ASSET_TAGS = (); }; };
@@ -53,6 +55,7 @@
 		AB327F6E1B8318AE00FA7EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB327F701B8318AE00FA7EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB327F7B1B8320D200FA7EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Find.storyboard; sourceTree = "<group>"; };
+		AB46D3E51B9587AA00D5E0CC /* BuyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyInfoViewController.swift; sourceTree = "<group>"; };
 		AB6157AE1B847A60007774B7 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
 		AB6157B01B847EDC007774B7 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		AB6539991B90127700BDAB39 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
@@ -60,9 +63,10 @@
 		AB7CDE5F1B85C25A0075344D /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		AB7CDE611B85C29D0075344D /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB7CDE641B85C8C40075344D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
-		AB8CA87B1B8420B600E30C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Buy.storyboard; sourceTree = "<group>"; };
 		AB8CA8821B84386300E30C13 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AB8CA8851B84387000E30C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		AB8E51391B9451BE009A3BE4 /* BuyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
+		AB8E513C1B94532C009A3BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Buy.storyboard; sourceTree = "<group>"; };
 		ABB1A0591B8483C30055D06A /* shuxian_ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shuxian_ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrderInfoTableViewCell.swift; sourceTree = "<group>"; };
 		ABCA584E1B904993002313CD /* MyOrder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyOrder.storyboard; sourceTree = "<group>"; };
@@ -143,12 +147,12 @@
 			isa = PBXGroup;
 			children = (
 				AB327F651B8318AE00FA7EA1 /* Main.storyboard */,
+				AB8E513B1B94532C009A3BE4 /* Buy.storyboard */,
 				AB7CDE631B85C8C40075344D /* Home.storyboard */,
 				AB6157AE1B847A60007774B7 /* My.storyboard */,
 				ABCA58501B9049B2002313CD /* MySetting.storyboard */,
 				ABCA584E1B904993002313CD /* MyOrder.storyboard */,
 				AB8CA8841B84387000E30C13 /* Login.storyboard */,
-				AB8CA87A1B8420B600E30C13 /* Buy.storyboard */,
 				AB327F7A1B8320D200FA7EA1 /* Find.storyboard */,
 			);
 			name = sb;
@@ -164,6 +168,7 @@
 				AB12062D1B8D6CE30018ED04 /* MyOrderInfoTableViewController.swift */,
 				AB6539991B90127700BDAB39 /* SettingTableViewController.swift */,
 				AB65399B1B9033A800BDAB39 /* PayTableViewController.swift */,
+				AB8E51391B9451BE009A3BE4 /* BuyTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				AB7CDE611B85C29D0075344D /* HomeCollectionViewCell.swift */,
 				AB1206291B8D63E10018ED04 /* MyOrderTableViewCell.swift */,
 				ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */,
+				AB46D3E51B9587AA00D5E0CC /* BuyInfoViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -276,9 +282,9 @@
 				AB6157AF1B847A60007774B7 /* My.storyboard in Resources */,
 				ABCA584F1B904993002313CD /* MyOrder.storyboard in Resources */,
 				AB327F671B8318AE00FA7EA1 /* Main.storyboard in Resources */,
-				AB8CA87C1B8420B600E30C13 /* Buy.storyboard in Resources */,
 				AB327F7C1B8320D200FA7EA1 /* Find.storyboard in Resources */,
 				AB7CDE651B85C8C40075344D /* Home.storyboard in Resources */,
+				AB8E513D1B94532C009A3BE4 /* Buy.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +345,10 @@
 			files = (
 				ABE271931B857BAF007E6366 /* ParallaxHeaderView.m in Sources */,
 				AB327F6A1B8318AE00FA7EA1 /* shuxian_ios.xcdatamodeld in Sources */,
+				AB8E513A1B9451BE009A3BE4 /* BuyTableViewController.swift in Sources */,
 				AB327F641B8318AE00FA7EA1 /* ViewController.swift in Sources */,
 				ABE271921B857BAF007E6366 /* UIImage+ImageEffects.m in Sources */,
+				AB46D3E61B9587AA00D5E0CC /* BuyInfoViewController.swift in Sources */,
 				AB327F621B8318AE00FA7EA1 /* AppDelegate.swift in Sources */,
 				AB7CDE621B85C29D0075344D /* HomeCollectionViewCell.swift in Sources */,
 				ABB69A751B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift in Sources */,
@@ -391,20 +399,20 @@
 			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
-		AB8CA87A1B8420B600E30C13 /* Buy.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB8CA87B1B8420B600E30C13 /* Base */,
-			);
-			name = Buy.storyboard;
-			sourceTree = "<group>";
-		};
 		AB8CA8841B84387000E30C13 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AB8CA8851B84387000E30C13 /* Base */,
 			);
 			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		AB8E513B1B94532C009A3BE4 /* Buy.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB8E513C1B94532C009A3BE4 /* Base */,
+			);
+			name = Buy.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
