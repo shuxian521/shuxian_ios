@@ -70,8 +70,9 @@ class BuyTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         
-        let popin = BuyInfoViewController()
-        popin.commodityImageView.image = UIImage(named: "20150820021222293")
+        let popin:BuyInfoViewController = BuyInfoViewController()
+        
+
         //设置view样式
         popin.setPopinTransitionStyle(.CrossDissolve)
         
@@ -118,8 +119,8 @@ class BuyTableViewController: UITableViewController {
         }
         
         
-        
-        popin.setPreferedPopinContentSize(CGSizeMake(280.0, 240.0))
+        //设置view范围
+        popin.setPreferedPopinContentSize(CGSizeMake(popin.view.frame.width - 20, popin.view.frame.height - 150))
     
         popin.setPopinTransitionDirection(.Top)
         

@@ -19,7 +19,6 @@
 		AB327F6C1B8318AE00FA7EA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB327F6B1B8318AE00FA7EA1 /* Assets.xcassets */; };
 		AB327F6F1B8318AE00FA7EA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB327F6D1B8318AE00FA7EA1 /* LaunchScreen.storyboard */; };
 		AB327F7C1B8320D200FA7EA1 /* Find.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB327F7A1B8320D200FA7EA1 /* Find.storyboard */; };
-		AB46D3E61B9587AA00D5E0CC /* BuyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB46D3E51B9587AA00D5E0CC /* BuyInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AB6157AF1B847A60007774B7 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6157AE1B847A60007774B7 /* My.storyboard */; };
 		AB6157B11B847EDC007774B7 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6157B01B847EDC007774B7 /* MyViewController.swift */; };
 		AB65399A1B90127700BDAB39 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6539991B90127700BDAB39 /* SettingTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -31,6 +30,8 @@
 		AB8CA8861B84387000E30C13 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8CA8841B84387000E30C13 /* Login.storyboard */; };
 		AB8E513A1B9451BE009A3BE4 /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E51391B9451BE009A3BE4 /* BuyTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AB8E513D1B94532C009A3BE4 /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8E513B1B94532C009A3BE4 /* Buy.storyboard */; settings = {ASSET_TAGS = (); }; };
+		ABABF4421B95A801004CDBF0 /* BuyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABABF4401B95A801004CDBF0 /* BuyInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		ABABF4431B95A801004CDBF0 /* BuyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABABF4411B95A801004CDBF0 /* BuyInfoViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		ABB69A751B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		ABCA584F1B904993002313CD /* MyOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCA584E1B904993002313CD /* MyOrder.storyboard */; settings = {ASSET_TAGS = (); }; };
 		ABCA58511B9049B2002313CD /* MySetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCA58501B9049B2002313CD /* MySetting.storyboard */; settings = {ASSET_TAGS = (); }; };
@@ -55,7 +56,6 @@
 		AB327F6E1B8318AE00FA7EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB327F701B8318AE00FA7EA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB327F7B1B8320D200FA7EA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Find.storyboard; sourceTree = "<group>"; };
-		AB46D3E51B9587AA00D5E0CC /* BuyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyInfoViewController.swift; sourceTree = "<group>"; };
 		AB6157AE1B847A60007774B7 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
 		AB6157B01B847EDC007774B7 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		AB6539991B90127700BDAB39 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +67,8 @@
 		AB8CA8851B84387000E30C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		AB8E51391B9451BE009A3BE4 /* BuyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
 		AB8E513C1B94532C009A3BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Buy.storyboard; sourceTree = "<group>"; };
+		ABABF4401B95A801004CDBF0 /* BuyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyInfoViewController.swift; sourceTree = "<group>"; };
+		ABABF4411B95A801004CDBF0 /* BuyInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyInfoViewController.xib; sourceTree = "<group>"; };
 		ABB1A0591B8483C30055D06A /* shuxian_ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shuxian_ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrderInfoTableViewCell.swift; sourceTree = "<group>"; };
 		ABCA584E1B904993002313CD /* MyOrder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyOrder.storyboard; sourceTree = "<group>"; };
@@ -191,7 +193,8 @@
 				AB7CDE611B85C29D0075344D /* HomeCollectionViewCell.swift */,
 				AB1206291B8D63E10018ED04 /* MyOrderTableViewCell.swift */,
 				ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */,
-				AB46D3E51B9587AA00D5E0CC /* BuyInfoViewController.swift */,
+				ABABF4401B95A801004CDBF0 /* BuyInfoViewController.swift */,
+				ABABF4411B95A801004CDBF0 /* BuyInfoViewController.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			files = (
 				AB8CA8861B84387000E30C13 /* Login.storyboard in Resources */,
 				AB327F6F1B8318AE00FA7EA1 /* LaunchScreen.storyboard in Resources */,
+				ABABF4431B95A801004CDBF0 /* BuyInfoViewController.xib in Resources */,
 				AB327F6C1B8318AE00FA7EA1 /* Assets.xcassets in Resources */,
 				ABCA58511B9049B2002313CD /* MySetting.storyboard in Resources */,
 				AB6157AF1B847A60007774B7 /* My.storyboard in Resources */,
@@ -348,7 +352,6 @@
 				AB8E513A1B9451BE009A3BE4 /* BuyTableViewController.swift in Sources */,
 				AB327F641B8318AE00FA7EA1 /* ViewController.swift in Sources */,
 				ABE271921B857BAF007E6366 /* UIImage+ImageEffects.m in Sources */,
-				AB46D3E61B9587AA00D5E0CC /* BuyInfoViewController.swift in Sources */,
 				AB327F621B8318AE00FA7EA1 /* AppDelegate.swift in Sources */,
 				AB7CDE621B85C29D0075344D /* HomeCollectionViewCell.swift in Sources */,
 				ABB69A751B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift in Sources */,
@@ -356,6 +359,7 @@
 				AB65399C1B9033A800BDAB39 /* PayTableViewController.swift in Sources */,
 				AB7CDE601B85C25A0075344D /* HomeCollectionViewController.swift in Sources */,
 				AB65399A1B90127700BDAB39 /* SettingTableViewController.swift in Sources */,
+				ABABF4421B95A801004CDBF0 /* BuyInfoViewController.swift in Sources */,
 				AB8CA8831B84386300E30C13 /* LoginViewController.swift in Sources */,
 				AB6157B11B847EDC007774B7 /* MyViewController.swift in Sources */,
 				AB1206281B8D61DB0018ED04 /* MyOrderTableViewController.swift in Sources */,

@@ -8,17 +8,18 @@
 
 import UIKit
 
-
 class BuyInfoViewController: UIViewController {
 
-    @IBOutlet weak var commodityImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.view.backgroundColor = UIColor.red
-
+//        
+//        m_mainImgView.layer.cornerRadius = 6;
+//        m_mainImgView.layer.masksToBounds = YES;
+        //设置view 矩形圆角
+        self.view.layer.cornerRadius = 6
+        self.view.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
