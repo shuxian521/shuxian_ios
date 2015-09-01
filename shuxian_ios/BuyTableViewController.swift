@@ -13,7 +13,9 @@ import UIKit
 import SwiftColor
 
 class BuyTableViewController: UITableViewController {
+    @IBOutlet var footerView: UIView!
 
+    @IBOutlet var headerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         //设置UINavigationBar title颜色，字体
@@ -50,6 +52,23 @@ class BuyTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 25
+    }
+    
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        return headerView
+    }
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 45
+    }
+    
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return footerView
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.

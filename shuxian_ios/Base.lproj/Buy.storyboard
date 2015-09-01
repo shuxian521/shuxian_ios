@@ -8,18 +8,24 @@
         <scene sceneID="OdC-kF-aFb">
             <objects>
                 <tableViewController id="7jZ-Oj-NbL" customClass="BuyTableViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="p7G-MM-JbN">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="p7G-MM-JbN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="buyCell" id="gJJ-LJ-EoL">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="buyCell" rowHeight="80" id="gJJ-LJ-EoL">
+                                <rect key="frame" x="0.0" y="92" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gJJ-LJ-EoL" id="CqE-yf-VMP">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20150820021222293" translatesAutoresizingMaskIntoConstraints="NO" id="Xln-sb-uBb">
+                                            <rect key="frame" x="15" y="10" width="80" height="60"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
@@ -31,10 +37,77 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="购物车" id="Q4G-Y7-rBe"/>
+                    <connections>
+                        <outlet property="footerView" destination="h24-5U-eKf" id="0pc-kT-o2f"/>
+                        <outlet property="headerView" destination="9l3-jk-Lpt" id="QtS-iD-y7u"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1c4-qO-ZUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="h24-5U-eKf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9U-q5-aE8">
+                            <rect key="frame" x="31" y="12" width="93" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总计：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R62-FE-D3m">
+                                    <rect key="frame" x="0.0" y="0.0" width="42" height="20"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥89.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOM-He-kaH">
+                                    <rect key="frame" x="42" y="0.0" width="51" height="20"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                    <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <animations/>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGk-f9-wUz">
+                            <rect key="frame" x="237" y="7" width="67" height="30"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.2666666667" green="0.56078431370000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="GDT-mq-las"/>
+                                <constraint firstAttribute="width" constant="67" id="QsP-xg-ybU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                            <color key="tintColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="去结算"/>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.97205810592574193" green="0.97327960030165916" blue="0.95194313611157755" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="s9U-q5-aE8" secondAttribute="bottom" constant="13" id="41a-Nz-PZ5"/>
+                        <constraint firstAttribute="trailing" secondItem="EGk-f9-wUz" secondAttribute="trailing" constant="16" id="4DS-4Z-qSj"/>
+                        <constraint firstItem="s9U-q5-aE8" firstAttribute="leading" secondItem="h24-5U-eKf" secondAttribute="leading" constant="31" id="7Od-Bt-mBJ"/>
+                        <constraint firstItem="EGk-f9-wUz" firstAttribute="top" secondItem="h24-5U-eKf" secondAttribute="top" constant="7" id="QzR-eJ-pwT"/>
+                        <constraint firstItem="s9U-q5-aE8" firstAttribute="top" secondItem="h24-5U-eKf" secondAttribute="top" constant="12" id="RmK-IK-XdQ"/>
+                        <constraint firstAttribute="bottom" secondItem="EGk-f9-wUz" secondAttribute="bottom" constant="8" id="sJo-tJ-wQH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" id="9l3-jk-Lpt">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="光华路提货点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eql-ie-VET">
+                            <rect key="frame" x="16" y="2" width="102" height="21"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.38085171568627446" green="0.72521240459270964" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
             </objects>
-            <point key="canvasLocation" x="148" y="514"/>
+            <point key="canvasLocation" x="116" y="545"/>
         </scene>
         <!--购物车-->
         <scene sceneID="4ke-LV-9hI">
@@ -61,6 +134,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="20150820021222293" width="298" height="168"/>
         <image name="buy" width="32" height="32"/>
     </resources>
 </document>
