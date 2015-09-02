@@ -3,10 +3,6 @@ pod 'SwiftColor'
 
 pod 'SDWebImage', '~>3.7'
 
-pod 'MaryPopin'
-
-
-
-
+pod 'MaryPopin' 
 
 use_frameworks!

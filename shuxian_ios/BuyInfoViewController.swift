@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GMStepper
 
 class BuyInfoViewController: UIViewController {
 
