@@ -32,6 +32,7 @@
 		AB8E513D1B94532C009A3BE4 /* Buy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8E513B1B94532C009A3BE4 /* Buy.storyboard */; settings = {ASSET_TAGS = (); }; };
 		ABABF4421B95A801004CDBF0 /* BuyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABABF4401B95A801004CDBF0 /* BuyInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ABABF4431B95A801004CDBF0 /* BuyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABABF4411B95A801004CDBF0 /* BuyInfoViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		ABABF4461B96CD00004CDBF0 /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABABF4451B96CD00004CDBF0 /* GMStepper.swift */; settings = {ASSET_TAGS = (); }; };
 		ABB69A751B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		ABCA584F1B904993002313CD /* MyOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCA584E1B904993002313CD /* MyOrder.storyboard */; settings = {ASSET_TAGS = (); }; };
 		ABCA58511B9049B2002313CD /* MySetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCA58501B9049B2002313CD /* MySetting.storyboard */; settings = {ASSET_TAGS = (); }; };
@@ -69,6 +70,7 @@
 		AB8E513C1B94532C009A3BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Buy.storyboard; sourceTree = "<group>"; };
 		ABABF4401B95A801004CDBF0 /* BuyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyInfoViewController.swift; sourceTree = "<group>"; };
 		ABABF4411B95A801004CDBF0 /* BuyInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyInfoViewController.xib; sourceTree = "<group>"; };
+		ABABF4451B96CD00004CDBF0 /* GMStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMStepper.swift; sourceTree = "<group>"; };
 		ABB1A0591B8483C30055D06A /* shuxian_ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shuxian_ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrderInfoTableViewCell.swift; sourceTree = "<group>"; };
 		ABCA584E1B904993002313CD /* MyOrder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyOrder.storyboard; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		AB327F801B83295100FA7EA1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				ABABF4441B96CCF7004CDBF0 /* GMStepper */,
 				AB28A8AC1B8B20F300D251F8 /* AdView */,
 				ABE2718E1B857BAF007E6366 /* UIImage+ImageEffects.h */,
 				ABE2718F1B857BAF007E6366 /* UIImage+ImageEffects.m */,
@@ -185,6 +188,14 @@
 				ABE271911B857BAF007E6366 /* ParallaxHeaderView.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		ABABF4441B96CCF7004CDBF0 /* GMStepper */ = {
+			isa = PBXGroup;
+			children = (
+				ABABF4451B96CD00004CDBF0 /* GMStepper.swift */,
+			);
+			name = GMStepper;
 			sourceTree = "<group>";
 		};
 		ABF3347C1B85B7E600C88D6E /* Views */ = {
@@ -354,6 +365,7 @@
 				ABE271921B857BAF007E6366 /* UIImage+ImageEffects.m in Sources */,
 				AB327F621B8318AE00FA7EA1 /* AppDelegate.swift in Sources */,
 				AB7CDE621B85C29D0075344D /* HomeCollectionViewCell.swift in Sources */,
+				ABABF4461B96CD00004CDBF0 /* GMStepper.swift in Sources */,
 				ABB69A751B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift in Sources */,
 				AB12062E1B8D6CE30018ED04 /* MyOrderInfoTableViewController.swift in Sources */,
 				AB65399C1B9033A800BDAB39 /* PayTableViewController.swift in Sources */,
