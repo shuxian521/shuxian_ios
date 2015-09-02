@@ -27,6 +27,20 @@ class BuyInfoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func closeButtonPressed(sender: UIButton) {
+//        
+//        [self.presentingPopinViewController dismissCurrentPopinControllerAnimated:YES completion:^{
+//            NSLog(@"Popin dismissed !");
+//            }];
+        self.presentingPopinViewController()?.dismissCurrentPopinControllerAnimated(true, completion: { () -> Void in
+            
+            print("退出")
+            
+        })
+        
+        
+
+    }
 
     /*
     // MARK: - Navigation

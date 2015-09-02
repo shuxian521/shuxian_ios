@@ -14,18 +14,92 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="multiply" translatesAutoresizingMaskIntoConstraints="NO" id="5KD-Ia-uXO">
-                    <rect key="frame" x="8" y="8" width="33" height="33"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et9-CL-ATG">
+                    <rect key="frame" x="19" y="8" width="22" height="22"/>
                     <animations/>
-                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="close"/>
+                    <connections>
+                        <action selector="closeButtonPressed:" destination="-1" eventType="touchUpInside" id="Oou-8c-U0I"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20150820021222293" translatesAutoresizingMaskIntoConstraints="NO" id="5BO-Ed-HGi">
+                    <rect key="frame" x="8" y="38" width="304" height="198"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="304" id="Wxk-mX-PVD"/>
+                        <constraint firstAttribute="height" constant="198" id="pTg-H6-5Il"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="河北青提晶莹试玛瑙" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y63-8g-b0V">
+                    <rect key="frame" x="28" y="244" width="265" height="20.5"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品价格：¥13.80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6O-pw-aQf">
+                    <rect key="frame" x="28" y="289" width="122.5" height="20.5"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                    <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="20150424070327960" translatesAutoresizingMaskIntoConstraints="NO" id="5zM-ww-1nG">
+                    <rect key="frame" x="176" y="292.5" width="100.5" height="14"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="规格：约400g" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="343-kY-jOg">
+                    <rect key="frame" x="28" y="328.5" width="122.5" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2RE-Za-sYP">
+                    <rect key="frame" x="0.0" y="354.5" width="320" height="1"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="Dm4-JA-Ml9"/>
+                        <constraint firstAttribute="height" constant="1" id="Wau-gx-UNK"/>
+                    </constraints>
+                </view>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="delete" translatesAutoresizingMaskIntoConstraints="NO" id="wjm-Rr-xVi">
+                    <rect key="frame" x="274" y="3" width="32" height="32"/>
+                    <animations/>
                 </imageView>
             </subviews>
             <animations/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-            <point key="canvasLocation" x="138" y="208"/>
+            <constraints>
+                <constraint firstItem="wjm-Rr-xVi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="3" id="2cm-7E-Qja"/>
+                <constraint firstItem="e6O-pw-aQf" firstAttribute="top" secondItem="Y63-8g-b0V" secondAttribute="bottom" constant="25" id="4RT-rh-ulw"/>
+                <constraint firstItem="5zM-ww-1nG" firstAttribute="leading" secondItem="e6O-pw-aQf" secondAttribute="trailing" constant="25.5" id="BPp-wP-cGH"/>
+                <constraint firstItem="et9-CL-ATG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="BlC-A3-YoS"/>
+                <constraint firstItem="343-kY-jOg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="Cvp-eD-2Bd"/>
+                <constraint firstAttribute="trailing" secondItem="343-kY-jOg" secondAttribute="trailing" constant="169.5" id="FMc-Vx-tzp"/>
+                <constraint firstItem="2RE-Za-sYP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fid-jz-Uuk"/>
+                <constraint firstItem="et9-CL-ATG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="Foz-Bv-sn0"/>
+                <constraint firstAttribute="trailing" secondItem="Y63-8g-b0V" secondAttribute="trailing" constant="27" id="IY1-mL-nN4"/>
+                <constraint firstAttribute="trailing" secondItem="5BO-Ed-HGi" secondAttribute="trailing" constant="8" id="OyG-TO-bCY"/>
+                <constraint firstItem="343-kY-jOg" firstAttribute="top" secondItem="e6O-pw-aQf" secondAttribute="bottom" constant="19" id="RLS-Vb-Hoi"/>
+                <constraint firstAttribute="trailing" secondItem="2RE-Za-sYP" secondAttribute="trailing" id="TDx-UE-bFW"/>
+                <constraint firstItem="Y63-8g-b0V" firstAttribute="top" secondItem="5BO-Ed-HGi" secondAttribute="bottom" constant="8" id="Zwg-U7-7ak"/>
+                <constraint firstItem="2RE-Za-sYP" firstAttribute="top" secondItem="343-kY-jOg" secondAttribute="bottom" constant="8" id="ckp-fx-lF3"/>
+                <constraint firstItem="5BO-Ed-HGi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="dBS-VV-kqH"/>
+                <constraint firstAttribute="trailing" secondItem="5zM-ww-1nG" secondAttribute="trailing" constant="43.5" id="eHs-TJ-j9D"/>
+                <constraint firstAttribute="trailing" secondItem="wjm-Rr-xVi" secondAttribute="trailing" constant="14" id="eZR-m0-jJd"/>
+                <constraint firstItem="5zM-ww-1nG" firstAttribute="top" secondItem="5BO-Ed-HGi" secondAttribute="bottom" constant="56.5" id="hgp-Sr-W1s"/>
+                <constraint firstItem="Y63-8g-b0V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="jVT-dg-mLV"/>
+                <constraint firstItem="5BO-Ed-HGi" firstAttribute="top" secondItem="wjm-Rr-xVi" secondAttribute="bottom" constant="3" id="lqk-8P-A83"/>
+                <constraint firstItem="e6O-pw-aQf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="zDt-SB-jpr"/>
+            </constraints>
+            <point key="canvasLocation" x="187" y="282"/>
         </view>
     </objects>
     <resources>
-        <image name="multiply" width="33" height="33"/>
+        <image name="20150424070327960" width="53" height="14"/>
+        <image name="20150820021222293" width="298" height="168"/>
+        <image name="close" width="22" height="22"/>
+        <image name="delete" width="32" height="32"/>
     </resources>
 </document>
