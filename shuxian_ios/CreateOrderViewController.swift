@@ -9,7 +9,7 @@
 import UIKit
 import SwiftColor
 
-class CreateOrderViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class CreateOrderViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -21,6 +21,8 @@ class CreateOrderViewController: UIViewController,UITableViewDataSource,UITableV
         self.navigationController?.navigationBar.tintColor = Color(hexString: "#228B22")
         self.title = "确认订单"
         
+        
+        self.tableView.bounces = true
         
     }
 
@@ -55,8 +57,12 @@ class CreateOrderViewController: UIViewController,UITableViewDataSource,UITableV
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell()
-    
         
+        let cell1 = tableView.dequeueReusableCellWithIdentifier("re")
+    
+        if indexPath.section == 0{
+            return cell1!
+        }
         
         return cell
         

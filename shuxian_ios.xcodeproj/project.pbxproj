@@ -33,6 +33,8 @@
 		ABABF4421B95A801004CDBF0 /* BuyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABABF4401B95A801004CDBF0 /* BuyInfoViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ABABF4431B95A801004CDBF0 /* BuyInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABABF4411B95A801004CDBF0 /* BuyInfoViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		ABABF4461B96CD00004CDBF0 /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABABF4451B96CD00004CDBF0 /* GMStepper.swift */; settings = {ASSET_TAGS = (); }; };
+		ABABF44A1B96E6A5004CDBF0 /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABABF4491B96E6A5004CDBF0 /* CreateOrderViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		ABABF44C1B96F13F004CDBF0 /* CreateOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABABF44B1B96F13F004CDBF0 /* CreateOrderTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		ABB69A751B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		ABCA584F1B904993002313CD /* MyOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCA584E1B904993002313CD /* MyOrder.storyboard */; settings = {ASSET_TAGS = (); }; };
 		ABCA58511B9049B2002313CD /* MySetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCA58501B9049B2002313CD /* MySetting.storyboard */; settings = {ASSET_TAGS = (); }; };
@@ -71,6 +73,8 @@
 		ABABF4401B95A801004CDBF0 /* BuyInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyInfoViewController.swift; sourceTree = "<group>"; };
 		ABABF4411B95A801004CDBF0 /* BuyInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyInfoViewController.xib; sourceTree = "<group>"; };
 		ABABF4451B96CD00004CDBF0 /* GMStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMStepper.swift; sourceTree = "<group>"; };
+		ABABF4491B96E6A5004CDBF0 /* CreateOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateOrderViewController.swift; sourceTree = "<group>"; };
+		ABABF44B1B96F13F004CDBF0 /* CreateOrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateOrderTableViewController.swift; sourceTree = "<group>"; };
 		ABB1A0591B8483C30055D06A /* shuxian_ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shuxian_ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrderInfoTableViewCell.swift; sourceTree = "<group>"; };
 		ABCA584E1B904993002313CD /* MyOrder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyOrder.storyboard; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				AB6539991B90127700BDAB39 /* SettingTableViewController.swift */,
 				AB65399B1B9033A800BDAB39 /* PayTableViewController.swift */,
 				AB8E51391B9451BE009A3BE4 /* BuyTableViewController.swift */,
+				ABABF4491B96E6A5004CDBF0 /* CreateOrderViewController.swift */,
+				ABABF44B1B96F13F004CDBF0 /* CreateOrderTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -367,11 +373,13 @@
 				AB7CDE621B85C29D0075344D /* HomeCollectionViewCell.swift in Sources */,
 				ABABF4461B96CD00004CDBF0 /* GMStepper.swift in Sources */,
 				ABB69A751B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift in Sources */,
+				ABABF44A1B96E6A5004CDBF0 /* CreateOrderViewController.swift in Sources */,
 				AB12062E1B8D6CE30018ED04 /* MyOrderInfoTableViewController.swift in Sources */,
 				AB65399C1B9033A800BDAB39 /* PayTableViewController.swift in Sources */,
 				AB7CDE601B85C25A0075344D /* HomeCollectionViewController.swift in Sources */,
 				AB65399A1B90127700BDAB39 /* SettingTableViewController.swift in Sources */,
 				ABABF4421B95A801004CDBF0 /* BuyInfoViewController.swift in Sources */,
+				ABABF44C1B96F13F004CDBF0 /* CreateOrderTableViewController.swift in Sources */,
 				AB8CA8831B84386300E30C13 /* LoginViewController.swift in Sources */,
 				AB6157B11B847EDC007774B7 /* MyViewController.swift in Sources */,
 				AB1206281B8D61DB0018ED04 /* MyOrderTableViewController.swift in Sources */,
