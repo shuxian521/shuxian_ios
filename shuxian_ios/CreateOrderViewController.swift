@@ -21,7 +21,7 @@ class CreateOrderViewController: UIViewController,UITableViewDataSource,UITableV
         self.navigationController?.navigationBar.tintColor = Color(hexString: "#228B22")
         self.title = "确认订单"
         
-        
+        //设置tableview滚动
         self.tableView.bounces = true
         
     }
