@@ -29,19 +29,10 @@ class BuyInfoViewController: UIViewController {
     }
     
     @IBAction func closeButtonPressed(sender: UIButton) {
-//        
-//        [self.presentingPopinViewController dismissCurrentPopinControllerAnimated:YES completion:^{
-//            NSLog(@"Popin dismissed !");
-//            }];
         self.presentingPopinViewController()?.dismissCurrentPopinControllerAnimated(true, completion: { () -> Void in
-            
             print("退出")
-            
         })
-        
-        
-
-    }
+    }/**>返回*/
 
     /*
     // MARK: - Navigation

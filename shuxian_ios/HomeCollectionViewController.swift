@@ -95,15 +95,18 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
+        
         return 100
+        
     }
-    
+
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! HomeCollectionViewCell
         
-       
         
         cell.name.text = "四川大个石榴，颗颗晶莹，口感水甜"
+        
+        
         
         if indexPath.row % 3 == 0{
             cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/07/17/20150717102512934.jpg"))
@@ -139,7 +142,7 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
         return CGSizeMake(self.view.frame.width, 300)
         
     }
-    /*设置Footer大小*/
+    /**设置Footer大小*/
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         return CGSizeMake(self.view.frame.width, 45)
     }

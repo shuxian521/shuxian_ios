@@ -27,6 +27,7 @@ class MyViewController: UITableViewController {
         }
     }
     
+
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
       
@@ -35,7 +36,6 @@ class MyViewController: UITableViewController {
         header.refreshBlurViewForNewImage()
         self.tableView.tableHeaderView = header
         
-
         
     }
  
@@ -48,10 +48,14 @@ class MyViewController: UITableViewController {
         }
     }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 
     // MARK: - Table view data source
 
