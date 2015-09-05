@@ -18,6 +18,12 @@ class CreateOrderTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.tableView.frame = CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: self.tableView.frame.height - 100)
+        
+        let footerView = UIView()
+        footerView.frame = CGRect(x: 0, y: self.view.frame.height-48, width: self.view.frame.width, height: 40)
+        footerView.backgroundColor = UIColor.redColor()
+        self.view.addSubview(footerView)
     }
 
     override func didReceiveMemoryWarning() {

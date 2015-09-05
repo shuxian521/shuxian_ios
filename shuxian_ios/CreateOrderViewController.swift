@@ -12,6 +12,7 @@ import SwiftColor
 class CreateOrderViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var footerView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +24,7 @@ class CreateOrderViewController: UIViewController,UITableViewDataSource,UITableV
         
         //设置tableview滚动
         self.tableView.bounces = true
+         
         
     }
 
@@ -79,11 +81,11 @@ class CreateOrderViewController: UIViewController,UITableViewDataSource,UITableV
         case 1:
             titleStr = "💰支付信息"
         case 2:
-            titleStr = "优惠券"
+            titleStr = "🎁优惠券"
         case 3:
             titleStr = "🍆商品清单"
         default:
-            titleStr = "价格清单"
+            titleStr = "💵价格清单"
         }
         
         return titleStr

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="JVD-2g-J3V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="JVD-2g-J3V">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
@@ -172,7 +172,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7843315A-8FE7-4004-AEA1-98B7E9677FCC" translatesAutoresizingMaskIntoConstraints="NO" id="THV-I5-JUB">
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B11BE7C2-3622-4775-A0E3-5CF2D41BB4E1" translatesAutoresizingMaskIntoConstraints="NO" id="THV-I5-JUB">
                                             <rect key="frame" x="180" y="12" width="54" height="15"/>
                                             <animations/>
                                             <constraints>
@@ -483,7 +483,7 @@
                                             <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5C50ADB0-4CF2-40F7-9056-FAC09E842BC4" translatesAutoresizingMaskIntoConstraints="NO" id="Ehp-Bc-VZg">
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9DC31782-D434-4F9E-A903-6C7092EA2B2A" translatesAutoresizingMaskIntoConstraints="NO" id="Ehp-Bc-VZg">
                                             <rect key="frame" x="180" y="12" width="54" height="15"/>
                                             <animations/>
                                             <constraints>
@@ -687,7 +687,7 @@
                                             <color key="textColor" red="0.2666666667" green="0.56078431370000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7AC5CA6A-383D-4B27-9099-823A3993302F" translatesAutoresizingMaskIntoConstraints="NO" id="UXR-8h-1pk">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="360FE664-9CBD-4FF5-B4D6-0670F2A00BA2" translatesAutoresizingMaskIntoConstraints="NO" id="UXR-8h-1pk">
                                             <rect key="frame" x="178" y="11" width="54" height="15"/>
                                             <animations/>
                                         </imageView>
@@ -813,7 +813,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="5C50ADB0-4CF2-40F7-9056-FAC09E842BC4" width="53" height="14">
+        <image name="360FE664-9CBD-4FF5-B4D6-0670F2A00BA2" width="53" height="14">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -914,7 +914,7 @@ FX8VgxWKFZIVnxWkFaYVqBWtFbUVuBW9FcUVyBXaFd0V4gAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAA
 AAAAABXkA
 </mutableData>
         </image>
-        <image name="7843315A-8FE7-4004-AEA1-98B7E9677FCC" width="53" height="14">
+        <image name="9DC31782-D434-4F9E-A903-6C7092EA2B2A" width="53" height="14">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -1015,7 +1015,7 @@ FX8VgxWKFZIVnxWkFaYVqBWtFbUVuBW9FcUVyBXaFd0V4gAAAAAAAAIBAAAAAAAAAEEAAAAAAAAAAAAA
 AAAAABXkA
 </mutableData>
         </image>
-        <image name="7AC5CA6A-383D-4B27-9099-823A3993302F" width="53" height="14">
+        <image name="B11BE7C2-3622-4775-A0E3-5CF2D41BB4E1" width="53" height="14">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
