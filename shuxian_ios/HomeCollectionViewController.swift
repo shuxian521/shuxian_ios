@@ -61,7 +61,7 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
         self.navigationController?.navigationBar.barTintColor = Color(hexString: "#228B22")
         //设置collectionView背景颜色
         self.collectionView?.backgroundColor = Color.whiteColor()
-        
+         
         
     }
     
@@ -89,15 +89,17 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
     
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         
-        return 100
-        
+        if section == 1{
+           return 50
+        }
+         return 50
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -105,8 +107,6 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
         
         
         cell.name.text = "四川大个石榴，颗颗晶莹，口感水甜"
-        
-        
         
         if indexPath.row % 3 == 0{
             cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/07/17/20150717102512934.jpg"))
@@ -118,9 +118,10 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
         }else{
             cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/07/28/20150728082155116.jpg"), placeholderImage: UIImage(named: "mytop"))
             
+           
         }
         
-        return cell
+               return cell
     }
     
     
@@ -139,13 +140,26 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
     
     /*设置Header大小*/
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSizeMake(self.view.frame.width, 300)
+        if section == 0{
+            
+            return CGSizeMake(self.view.frame.width, 300)
+        }
         
+        return CGSizeMake(self.view.frame.width, 20)
     }
     /**设置Footer大小*/
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-        return CGSizeMake(self.view.frame.width, 45)
+        return CGSizeMake(self.view.frame.width, 96)
     }
+//    
+//    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+//        
+//        print(indexPath)
+//        var v : UICollectionReusableView! = nil
+//        
+//        return v
+//        
+//    }
     
 //    /*添加Heard，footer*/
 //    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
