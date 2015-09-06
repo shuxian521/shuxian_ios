@@ -150,7 +150,7 @@
                             <color key="tintColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                             <state key="normal" title="去结算"/>
                             <connections>
-                                <segue destination="CbW-aK-nOQ" kind="push" id="e5L-V6-Nta"/>
+                                <segue destination="CbW-aK-nOQ" kind="push" identifier="toCreateOrder" id="e5L-V6-Nta"/>
                             </connections>
                         </button>
                     </subviews>

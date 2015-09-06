@@ -24,7 +24,14 @@ class CreateOrderViewController: UIViewController,UITableViewDataSource,UITableV
         
         //设置tableview滚动
         self.tableView.bounces = true
-         
+        
+        
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+       // self.tabBarController?.tabBar.hidden = true
         
     }
 
