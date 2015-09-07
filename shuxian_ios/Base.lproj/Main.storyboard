@@ -44,7 +44,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYs-Je-7vV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-694" y="-10"/>
+            <point key="canvasLocation" x="-780" y="-23"/>
         </scene>
         <!--Find-->
         <scene sceneID="3qk-DD-MK8">
@@ -54,7 +54,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QL7-AE-c0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-281" y="-33"/>
+            <point key="canvasLocation" x="-423" y="-33"/>
         </scene>
         <!--My-->
         <scene sceneID="IpQ-J3-egT">
@@ -64,7 +64,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHs-tQ-GrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284.5" y="84"/>
+            <point key="canvasLocation" x="-426.5" y="84"/>
         </scene>
         <!--Home-->
         <scene sceneID="8HZ-Yx-FNR">
@@ -74,7 +74,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="An4-ZE-Px6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-276" y="-101"/>
+            <point key="canvasLocation" x="-418" y="-101"/>
         </scene>
         <!--Buy-->
         <scene sceneID="DDn-QG-KcA">
@@ -84,7 +84,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qpp-9c-QuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-282" y="24"/>
+            <point key="canvasLocation" x="-424" y="24"/>
         </scene>
     </scenes>
 </document>

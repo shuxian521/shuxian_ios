@@ -106,17 +106,17 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! HomeCollectionViewCell
         
         
-        cell.name.text = "四川大个石榴，颗颗晶莹，口感水甜"
+        cell.name.text = "四川大阿萨大大的个石榴，颗颗晶莹，口感水甜"
         
         if indexPath.row % 3 == 0{
-            cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/07/17/20150717102512934.jpg"))
+            cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/04/20/20150420053637770_400_300.jpg"))
         }else if indexPath.row % 5 == 0 {
-            cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/08/20/20150820021222293.jpg"), placeholderImage: UIImage(named: "mytop"))
-        }else if indexPath.row % 9 == 0 {
-            cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/08/20/20150820022651500.jpg"), placeholderImage: UIImage(named: "mytop"))
+            cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/09/06/20150906061156756_400_300.jpg"), placeholderImage: UIImage(named: "mytop"))
+        }else if indexPath.row % 6 == 0 {
+            cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/09/06/20150906061227107_400_300.jpg"), placeholderImage: UIImage(named: "mytop"))
             
         }else{
-            cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/07/28/20150728082155116.jpg"), placeholderImage: UIImage(named: "mytop"))
+            cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/09/06/20150906061227107_400_300.jpg"), placeholderImage: UIImage(named: "mytop"))
             
            
         }
@@ -128,13 +128,13 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
     // MARK:UICollectionViewDelegateFlowLayout
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        
-        return CGSizeMake((self.view.frame.width-10)/2, 200);
+    
+        return CGSizeMake((self.view.frame.width-10)/2, 190);
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         //设置间距
-        return UIEdgeInsetsMake(5, 0, 5, 0);
+        return UIEdgeInsetsMake(0, 0, 5, 0);
         
     }
     
