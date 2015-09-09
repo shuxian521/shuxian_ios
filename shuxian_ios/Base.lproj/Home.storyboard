@@ -5,11 +5,6 @@
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </mutableArray>
-    </customFonts>
     <scenes>
         <!--首页-->
         <scene sceneID="sTn-Af-aSh">
@@ -38,57 +33,60 @@
                                     <rect key="frame" x="0.0" y="0.0" width="149" height="209"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8zL-qX-n0b">
-                                            <rect key="frame" x="0.0" y="0.0" width="149" height="115"/>
-                                            <animations/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="115" id="pBz-HZ-j3B"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="四川大个石榴，颗颗晶莹，口感水甜" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biY-in-iUb">
-                                            <rect key="frame" x="8" y="120" width="133" height="28"/>
-                                            <animations/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="28" id="FsR-XC-kcO"/>
-                                                <constraint firstAttribute="width" constant="133" id="M8K-1i-rWz"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9O-eh-yyh">
-                                            <rect key="frame" x="8" y="153" width="56" height="36"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biY-in-iUb">
+                                            <rect key="frame" x="8" y="120" width="133" height="36"/>
                                             <animations/>
                                             <attributedString key="attributedText">
-                                                <fragment content="￥8.00/份">
+                                                <fragment content="四川大个石榴，颗颗晶莹，口感水甜">
                                                     <attributes>
-                                                        <color key="NSColor" red="1" green="0.2806502226" blue="0.25597785239999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" size="12" name="PingFangSC-Medium"/>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="市场价:￥" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irA-4H-1JX">
-                                            <rect key="frame" x="8" y="170" width="47" height="36"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9O-eh-yyh">
+                                            <rect key="frame" x="8" y="161" width="71" height="20"/>
                                             <animations/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="￥8.00/份">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.2806502226" blue="0.25597785239999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="14" name="PingFangSC-Medium"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJl-m9-DKc">
-                                            <rect key="frame" x="54" y="170" width="29" height="36"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="市场价:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irA-4H-1JX">
+                                            <rect key="frame" x="8" y="189" width="38" height="14"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20150424070327960" translatesAutoresizingMaskIntoConstraints="NO" id="fW1-w8-tSF">
-                                            <rect key="frame" x="87" y="151" width="54" height="14"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥12.00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJl-m9-DKc">
+                                            <rect key="frame" x="54" y="189" width="36" height="14"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
+                                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="20150424070327960" translatesAutoresizingMaskIntoConstraints="NO" id="fW1-w8-tSF">
+                                            <rect key="frame" x="87" y="164" width="54" height="14"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="54" id="YJv-JE-JFv"/>
                                                 <constraint firstAttribute="height" constant="14" id="nTX-tU-4Hg"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8zL-qX-n0b">
+                                            <rect key="frame" x="0.0" y="0.0" width="149" height="115"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="115" id="pBz-HZ-j3B"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
@@ -101,23 +99,22 @@
                                     <constraint firstItem="8zL-qX-n0b" firstAttribute="leading" secondItem="l82-ER-RMO" secondAttribute="leading" id="4an-mD-1Gi"/>
                                     <constraint firstItem="I9O-eh-yyh" firstAttribute="leading" secondItem="l82-ER-RMO" secondAttribute="leadingMargin" id="9ge-jP-6VB"/>
                                     <constraint firstItem="8zL-qX-n0b" firstAttribute="top" secondItem="l82-ER-RMO" secondAttribute="top" id="9w8-Vv-Lgh"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="I9O-eh-yyh" secondAttribute="trailing" constant="77" id="CRn-D8-nCx"/>
-                                    <constraint firstItem="irA-4H-1JX" firstAttribute="top" secondItem="biY-in-iUb" secondAttribute="bottom" constant="22" id="D1u-VS-l5s"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="I9O-eh-yyh" secondAttribute="trailing" constant="62" id="CRn-D8-nCx"/>
+                                    <constraint firstAttribute="trailing" secondItem="biY-in-iUb" secondAttribute="trailing" constant="8" id="Cta-8u-4TZ"/>
                                     <constraint firstItem="fW1-w8-tSF" firstAttribute="trailing" secondItem="l82-ER-RMO" secondAttribute="trailingMargin" id="Fnq-go-koQ"/>
-                                    <constraint firstItem="biY-in-iUb" firstAttribute="top" secondItem="8zL-qX-n0b" secondAttribute="bottom" constant="5" id="HYn-fq-Rey"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="irA-4H-1JX" secondAttribute="trailing" constant="86" id="IP8-Zp-SKe"/>
-                                    <constraint firstItem="I9O-eh-yyh" firstAttribute="top" secondItem="biY-in-iUb" secondAttribute="bottom" constant="5" id="IlP-LV-F9U"/>
-                                    <constraint firstItem="biY-in-iUb" firstAttribute="trailing" secondItem="l82-ER-RMO" secondAttribute="trailingMargin" id="Kev-4C-Bd3"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="irA-4H-1JX" secondAttribute="bottom" constant="-5" id="RMR-4M-rqV"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="irA-4H-1JX" secondAttribute="trailing" constant="95" id="IP8-Zp-SKe"/>
+                                    <constraint firstItem="biY-in-iUb" firstAttribute="leading" secondItem="l82-ER-RMO" secondAttribute="leading" constant="8" id="Nvx-uL-9MB"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="irA-4H-1JX" secondAttribute="bottom" constant="-2" id="RMR-4M-rqV"/>
                                     <constraint firstItem="I9O-eh-yyh" firstAttribute="leading" secondItem="irA-4H-1JX" secondAttribute="leading" id="XHK-jX-eNS"/>
-                                    <constraint firstItem="I9O-eh-yyh" firstAttribute="top" secondItem="fW1-w8-tSF" secondAttribute="top" constant="2" id="b1P-dg-Bj4"/>
+                                    <constraint firstItem="I9O-eh-yyh" firstAttribute="top" secondItem="biY-in-iUb" secondAttribute="bottom" constant="5" id="aob-Hw-xbe"/>
+                                    <constraint firstItem="I9O-eh-yyh" firstAttribute="top" secondItem="fW1-w8-tSF" secondAttribute="top" constant="-3" id="b1P-dg-Bj4"/>
                                     <constraint firstItem="irA-4H-1JX" firstAttribute="firstBaseline" secondItem="fJl-m9-DKc" secondAttribute="firstBaseline" id="bXg-nq-N79"/>
                                     <constraint firstAttribute="trailing" secondItem="8zL-qX-n0b" secondAttribute="trailing" id="cPe-CY-1fe"/>
                                     <constraint firstItem="irA-4H-1JX" firstAttribute="baseline" secondItem="fJl-m9-DKc" secondAttribute="baseline" id="cWX-n6-F3w"/>
-                                    <constraint firstItem="biY-in-iUb" firstAttribute="leading" secondItem="l82-ER-RMO" secondAttribute="leadingMargin" id="pf4-Ne-3PO"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="fJl-m9-DKc" secondAttribute="trailing" constant="58" id="vvh-rl-eHe"/>
+                                    <constraint firstItem="biY-in-iUb" firstAttribute="top" secondItem="8zL-qX-n0b" secondAttribute="bottom" constant="5" id="oOZ-Oc-cYO"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="fJl-m9-DKc" secondAttribute="trailing" constant="51" id="vvh-rl-eHe"/>
                                     <constraint firstItem="fJl-m9-DKc" firstAttribute="leading" secondItem="l82-ER-RMO" secondAttribute="leadingMargin" constant="46" id="wBp-kH-6gu"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="I9O-eh-yyh" secondAttribute="bottom" constant="12" id="wba-sf-Pxi"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="I9O-eh-yyh" secondAttribute="bottom" constant="20" id="wba-sf-Pxi"/>
                                 </constraints>
                                 <size key="customSize" width="149" height="209"/>
                                 <connections>

@@ -106,7 +106,7 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! HomeCollectionViewCell
         
         
-        cell.name.text = "四川大个石榴，颗颗晶莹，口感水甜"
+        cell.name.text = "四川大个萨达达达石榴，颗颗晶莹，口感水甜"
         
         if indexPath.row % 3 == 0{
             cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/04/20/20150420053637770_400_300.jpg"))
@@ -120,8 +120,7 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
             
            
         }
-        
-               return cell
+        return cell
     }
     
     
