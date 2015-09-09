@@ -67,10 +67,36 @@ class CreateOrderViewController: UIViewController,UITableViewDataSource,UITableV
         
         let cell = UITableViewCell()
         
-        let cell1 = tableView.dequeueReusableCellWithIdentifier("re")
+        let cell_thd = tableView.dequeueReusableCellWithIdentifier("thd")
+        
+        let cell_pay = tableView.dequeueReusableCellWithIdentifier("pay")
+        
+        let cell_coupon = tableView.dequeueReusableCellWithIdentifier("coupon")
+        
+        let cell_buyCell = tableView.dequeueReusableCellWithIdentifier("buyCell")
+
+        let cell_price = tableView.dequeueReusableCellWithIdentifier("price")
+
+
     
         if indexPath.section == 0{
-            return cell1!
+            return cell_thd!
+        }
+        
+        if indexPath.section == 1{
+            return cell_pay!
+        }
+        
+        if indexPath.section == 2{
+            return cell_coupon!
+        }
+        
+        if indexPath.section == 3{
+            return cell_buyCell!
+        }
+        
+        if indexPath.section == 4{
+            return cell_price!
         }
         
         return cell
@@ -84,19 +110,38 @@ class CreateOrderViewController: UIViewController,UITableViewDataSource,UITableV
         var titleStr = ""
         switch section {
         case 0:
-            titleStr = "🏡提货点"
+            titleStr = "🏡 提货点"
         case 1:
-            titleStr = "💰支付信息"
+            titleStr = "💰 支付信息"
         case 2:
-            titleStr = "🎁优惠券"
+            titleStr = "🎁 优惠券"
         case 3:
-            titleStr = "🍆商品清单"
+            titleStr = "🍆 商品清单"
         default:
-            titleStr = "💵价格清单"
+            titleStr = "💵 价格清单"
         }
         
         return titleStr
         
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        var cellHeight:CGFloat = 0
+        switch indexPath.section {
+        case 0:
+            cellHeight = 57
+        case 1:
+            cellHeight = 44
+        case 2:
+            cellHeight = 40
+        case 3:
+            cellHeight = 60
+
+        default:
+            cellHeight = 44
+        }
+        
+        return cellHeight
         
     }
     
