@@ -42,6 +42,18 @@
 		ABE271931B857BAF007E6366 /* ParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE271911B857BAF007E6366 /* ParallaxHeaderView.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		ABB59BCC1B99D3D000134DF5 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.metal;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# <com.apple.compilers.metal.osx>\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
 		886EBF895BE7E8CEB1E3D33E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		925C1D3126FE0796EEEC4382 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -248,6 +260,7 @@
 				8549FF8717F077FFEA1B97BD /* Copy Pods Resources */,
 			);
 			buildRules = (
+				ABB59BCC1B99D3D000134DF5 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -531,6 +544,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = shuxian_ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.shuxian.shuxian-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,6 +561,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = shuxian_ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.shuxian.shuxian-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
