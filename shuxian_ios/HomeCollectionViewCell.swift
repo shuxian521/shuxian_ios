@@ -22,6 +22,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     ///商品市场价格
     @IBOutlet weak var marketPrice: UILabel!
+    
+    
      
     
 }

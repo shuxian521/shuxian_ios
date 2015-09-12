@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="amF-lf-GFO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="amF-lf-GFO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -141,11 +141,66 @@
                             <outlet property="delegate" destination="1u5-q0-Opw" id="Qte-f8-JYc"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="首页" id="d9e-6T-LAh"/>
+                    <navigationItem key="navigationItem" title="首页" id="d9e-6T-LAh">
+                        <barButtonItem key="rightBarButtonItem" title="分类" id="U6V-8E-a1h">
+                            <connections>
+                                <segue destination="7Cx-lR-O0N" kind="push" id="Jwm-Nn-oFG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Stn-UT-kwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="404" y="512"/>
+            <point key="canvasLocation" x="296" y="555"/>
+        </scene>
+        <!--分类-->
+        <scene sceneID="eBc-vQ-eLq">
+            <objects>
+                <tableViewController id="7Cx-lR-O0N" customClass="CategoryTableViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9AC-Sn-ZyQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="wi3-3v-udt" customClass="CategoryCell" customModule="shuxian_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wi3-3v-udt" id="pOt-FT-Ing">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chengzi" translatesAutoresizingMaskIntoConstraints="NO" id="z40-90-N06">
+                                            <rect key="frame" x="17" y="4" width="35" height="35"/>
+                                            <animations/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="苹果" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTd-S0-6GC">
+                                            <rect key="frame" x="60" y="11" width="34" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.38085171569999998" green="0.72521240460000003" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="icon" destination="z40-90-N06" id="wlE-hd-EM3"/>
+                                    <outlet property="name" destination="NTd-S0-6GC" id="FOe-cW-yKU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7Cx-lR-O0N" id="Lpr-ir-BCa"/>
+                            <outlet property="delegate" destination="7Cx-lR-O0N" id="bQo-5y-PfQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="分类" id="IaA-m9-qMv"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W3a-tH-ceK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="537"/>
         </scene>
         <!--首页-->
         <scene sceneID="G2m-D4-1jb">
@@ -170,7 +225,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="20150424070327960" width="53" height="14"/>
+        <image name="20150424070327960" width="107" height="28"/>
+        <image name="chengzi" width="33" height="33"/>
         <image name="home" width="32" height="32"/>
     </resources>
     <color key="tintColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
