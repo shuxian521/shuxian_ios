@@ -38,6 +38,8 @@
 		ABB69A751B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		ABCA584F1B904993002313CD /* MyOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCA584E1B904993002313CD /* MyOrder.storyboard */; settings = {ASSET_TAGS = (); }; };
 		ABCA58511B9049B2002313CD /* MySetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCA58501B9049B2002313CD /* MySetting.storyboard */; settings = {ASSET_TAGS = (); }; };
+		ABCE235A1BA447BA00CBAFE2 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCE23591BA447BA00CBAFE2 /* CategoryTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		ABCE235C1BA44CBC00CBAFE2 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCE235B1BA44CBC00CBAFE2 /* CategoryCell.swift */; settings = {ASSET_TAGS = (); }; };
 		ABE271921B857BAF007E6366 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE2718F1B857BAF007E6366 /* UIImage+ImageEffects.m */; };
 		ABE271931B857BAF007E6366 /* ParallaxHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE271911B857BAF007E6366 /* ParallaxHeaderView.m */; };
 /* End PBXBuildFile section */
@@ -91,6 +93,8 @@
 		ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOrderInfoTableViewCell.swift; sourceTree = "<group>"; };
 		ABCA584E1B904993002313CD /* MyOrder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyOrder.storyboard; sourceTree = "<group>"; };
 		ABCA58501B9049B2002313CD /* MySetting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MySetting.storyboard; sourceTree = "<group>"; };
+		ABCE23591BA447BA00CBAFE2 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		ABCE235B1BA44CBC00CBAFE2 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		ABE2718E1B857BAF007E6366 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		ABE2718F1B857BAF007E6366 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		ABE271901B857BAF007E6366 /* ParallaxHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParallaxHeaderView.h; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 				AB8E51391B9451BE009A3BE4 /* BuyTableViewController.swift */,
 				ABABF4491B96E6A5004CDBF0 /* CreateOrderViewController.swift */,
 				ABABF44B1B96F13F004CDBF0 /* CreateOrderTableViewController.swift */,
+				ABCE23591BA447BA00CBAFE2 /* CategoryTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 				ABB69A741B8D8F8C0085B0B4 /* MyOrderInfoTableViewCell.swift */,
 				ABABF4401B95A801004CDBF0 /* BuyInfoViewController.swift */,
 				ABABF4411B95A801004CDBF0 /* BuyInfoViewController.xib */,
+				ABCE235B1BA44CBC00CBAFE2 /* CategoryCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -392,11 +398,13 @@
 				AB7CDE601B85C25A0075344D /* HomeCollectionViewController.swift in Sources */,
 				AB65399A1B90127700BDAB39 /* SettingTableViewController.swift in Sources */,
 				ABABF4421B95A801004CDBF0 /* BuyInfoViewController.swift in Sources */,
+				ABCE235A1BA447BA00CBAFE2 /* CategoryTableViewController.swift in Sources */,
 				ABABF44C1B96F13F004CDBF0 /* CreateOrderTableViewController.swift in Sources */,
 				AB8CA8831B84386300E30C13 /* LoginViewController.swift in Sources */,
 				AB6157B11B847EDC007774B7 /* MyViewController.swift in Sources */,
 				AB1206281B8D61DB0018ED04 /* MyOrderTableViewController.swift in Sources */,
 				AB12062A1B8D63E10018ED04 /* MyOrderTableViewCell.swift in Sources */,
+				ABCE235C1BA44CBC00CBAFE2 /* CategoryCell.swift in Sources */,
 				AB28A8AF1B8B210000D251F8 /* AdView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
