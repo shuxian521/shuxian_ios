@@ -516,7 +516,7 @@
         <scene sceneID="4ke-LV-9hI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="le0-am-Zn4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="购物车" image="buy" id="paf-4Y-8J1"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="购物车" image="buy" id="paf-4Y-8J1"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics">
                         <color key="tintColor" red="0.2666666667" green="0.56078431370000004" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>

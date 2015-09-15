@@ -28,8 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
         
         
+
         //设置TabBar 选中背景色
         UITabBar.appearance().tintColor = Color(hexString: "#228B22")
+        
+      
+        //能够在ios桌面的程序icon右上角显示数字（badge number）
+        UIApplication.sharedApplication().applicationIconBadgeNumber = 5
         
         return true
     }

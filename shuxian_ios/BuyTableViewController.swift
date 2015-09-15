@@ -25,6 +25,8 @@ class BuyTableViewController: UITableViewController {
             self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:Color(hexString: "#228B22"), NSFontAttributeName:barFont]
         }
         
+       
+
     }
     
     override func viewDidAppear(animated: Bool) {

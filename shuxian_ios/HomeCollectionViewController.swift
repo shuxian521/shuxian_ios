@@ -61,8 +61,14 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
         self.navigationController?.navigationBar.barTintColor = Color(hexString: "#228B22")
         //设置collectionView背景颜色
         self.collectionView?.backgroundColor = Color.whiteColor()
-         
         
+        
+        
+        for item in (self.tabBarController?.tabBar.items)! {
+            if item.tag == 2 { //购物车
+                 item.badgeValue = "3"
+            }
+        }
     }
     
     override func viewDidAppear(animated: Bool) {
