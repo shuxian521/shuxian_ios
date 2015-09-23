@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import GMStepper
+
 
 class BuyInfoViewController: UIViewController {
 
@@ -21,6 +21,8 @@ class BuyInfoViewController: UIViewController {
         //设置view 矩形圆角
         self.view.layer.cornerRadius = 6
         self.view.layer.masksToBounds = true
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

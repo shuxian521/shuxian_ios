@@ -9,8 +9,6 @@
 import UIKit
 import SwiftColor
 
-import StrechyParallaxScrollView
-
 
 private let reuseIdentifier = "Cell"
 
@@ -124,7 +122,6 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
         }else{
             cell.homeCellImage.sd_setImageWithURL(NSURL(string: "http://imgcdn.xuxian.com/upload/2015/09/06/20150906061227107_400_300.jpg"), placeholderImage: UIImage(named: "mytop"))
             
-           
         }
         return cell
     }
@@ -219,5 +216,10 @@ class HomeCollectionViewController: UICollectionViewController,UICollectionViewD
     
     }
     */
+    
+    @IBAction func closeHome(segue:UIStoryboardSegue){
+        
+        print("点击了返回")
+    }
     
 }

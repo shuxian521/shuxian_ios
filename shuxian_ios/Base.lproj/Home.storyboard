@@ -123,6 +123,7 @@
                                     <outlet property="name" destination="biY-in-iUb" id="6W9-zE-Z7e"/>
                                     <outlet property="price" destination="I9O-eh-yyh" id="VQC-2f-SfN"/>
                                     <outlet property="selltypeImage" destination="fW1-w8-tSF" id="R7B-az-05A"/>
+                                    <segue destination="Ed4-Vt-KKB" kind="modal" id="Ayl-fA-KL0"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -152,6 +153,145 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Stn-UT-kwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="296" y="555"/>
+        </scene>
+        <!--Wares Info View Controller-->
+        <scene sceneID="VaR-sk-R6C">
+            <objects>
+                <viewController id="Ed4-Vt-KKB" customClass="WaresInfoViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pzF-El-Uto"/>
+                        <viewControllerLayoutGuide type="bottom" id="stH-6J-rzH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZtZ-46-1Ex">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zrM-Nt-IL2">
+                                <rect key="frame" x="0.0" y="32" width="320" height="505"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-nL-htF">
+                                        <rect key="frame" x="20" y="252" width="280" height="1"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mat-KE-1hn">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="327"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="新疆无籽露加量装" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhC-lV-bwe">
+                                                <rect key="frame" x="20" y="197" width="270" height="39"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20150922051540531" translatesAutoresizingMaskIntoConstraints="NO" id="eeS-9u-jWo">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+                                                <animations/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="市场价：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpR-gW-giR">
+                                                <rect key="frame" x="20" y="280" width="52" height="24"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¥15.38" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4s-Ql-m6Q">
+                                                <rect key="frame" x="80" y="280" width="51" height="24"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="规格：" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2b-GC-s4G">
+                                                <rect key="frame" x="159" y="281" width="41" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.80000000000000004" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="约1000g" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEY-PL-XZp">
+                                                <rect key="frame" x="208" y="281" width="52" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.80000000000000004" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="产品价格：" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0V-Zs-TiR">
+                                                <rect key="frame" x="20" y="243" width="68" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.80000000000000004" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¥12.00/份" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xc0-Uu-yeG">
+                                                <rect key="frame" x="96" y="243" width="80" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.98431372549019602" green="0.41960784313725491" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5DR-5w-Msl">
+                                        <rect key="frame" x="0.0" y="341" width="320" height="1000"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </webView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4IY-oX-WVA">
+                                        <rect key="frame" x="0.0" y="231" width="320" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enz-sU-naw">
+                                                <rect key="frame" x="20" y="12" width="38" height="22"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="返回">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="0uY-JT-h6D" kind="unwind" unwindAction="closeHome:" id="A8m-cs-Ame"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5DR-5w-Msl" firstAttribute="top" secondItem="mat-KE-1hn" secondAttribute="bottom" constant="14" id="Do2-37-ghQ"/>
+                                    <constraint firstItem="5DR-5w-Msl" firstAttribute="leading" secondItem="zrM-Nt-IL2" secondAttribute="leading" id="XT5-B3-ObY"/>
+                                    <constraint firstAttribute="trailing" secondItem="5DR-5w-Msl" secondAttribute="trailing" id="ifY-CV-Xvz"/>
+                                    <constraint firstAttribute="bottom" secondItem="5DR-5w-Msl" secondAttribute="bottom" constant="8" id="vE2-gs-EYN"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="Ed4-Vt-KKB" id="VbV-KO-Z8Y"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zrM-Nt-IL2" firstAttribute="leading" secondItem="ZtZ-46-1Ex" secondAttribute="leading" id="E5v-S9-3Tp"/>
+                            <constraint firstItem="stH-6J-rzH" firstAttribute="top" secondItem="zrM-Nt-IL2" secondAttribute="bottom" constant="48" id="SJf-Mj-VXf"/>
+                            <constraint firstItem="zrM-Nt-IL2" firstAttribute="top" secondItem="pzF-El-Uto" secondAttribute="bottom" constant="12" id="mEP-2R-qlD"/>
+                            <constraint firstAttribute="trailing" secondItem="zrM-Nt-IL2" secondAttribute="trailing" id="nE4-la-Bvp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gta-2g-ljB"/>
+                    <connections>
+                        <outlet property="parView" destination="mat-KE-1hn" id="8Mo-2G-enx"/>
+                        <outlet property="scrollView" destination="zrM-Nt-IL2" id="IDR-xH-LBY"/>
+                        <outlet property="topView" destination="4IY-oX-WVA" id="RAm-vo-Mak"/>
+                        <outlet property="waresInfoWebView" destination="5DR-5w-Msl" id="2sW-8p-wvd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CLt-vF-k3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0uY-JT-h6D" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="1242"/>
         </scene>
         <!--分类-->
         <scene sceneID="eBc-vQ-eLq">
@@ -226,6 +366,7 @@
     </scenes>
     <resources>
         <image name="20150424070327960" width="107" height="28"/>
+        <image name="20150922051540531" width="896" height="504"/>
         <image name="chengzi" width="33" height="33"/>
         <image name="home" width="32" height="32"/>
     </resources>
