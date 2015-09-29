@@ -10,6 +10,7 @@ import UIKit
 
 class WaresInfoViewController: UIViewController,UIScrollViewDelegate {
 
+    
     @IBOutlet weak var waresInfoWebView: UIWebView!
     
     @IBOutlet weak var topView: UIView!

@@ -26,7 +26,8 @@ class MyOrderTableViewController: UITableViewController {
         self.navigationController?.navigationBar.tintColor = Color(hexString: "#228B22")
         //tableview数据为空时 cell问题
         self.tableView.tableFooterView=UIView()
-
+        
+        
 //          
     }
     
@@ -65,6 +66,7 @@ class MyOrderTableViewController: UITableViewController {
         return cell
     }
 
+    
 
     /*
     // Override to support conditional editing of the table view.

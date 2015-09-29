@@ -9,7 +9,7 @@
         <!--购物车-->
         <scene sceneID="OdC-kF-aFb">
             <objects>
-                <tableViewController id="7jZ-Oj-NbL" customClass="BuyTableViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="buy" id="7jZ-Oj-NbL" customClass="BuyTableViewController" customModule="shuxian_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="p7G-MM-JbN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +181,7 @@
                     <color key="backgroundColor" red="0.38085171568627446" green="0.72521240459270964" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="122" y="514"/>
+            <point key="canvasLocation" x="224" y="514"/>
         </scene>
         <!--Create Order View Controller-->
         <scene sceneID="aZX-98-rd8">

@@ -14,7 +14,7 @@ private let reuseIdentifier = "Cell"
 
 class HomeCollectionViewController: UICollectionViewController,UICollectionViewDelegateFlowLayout {
     
-    
+
     var adView:AdView = AdView()
     
     override func viewDidLoad() {
